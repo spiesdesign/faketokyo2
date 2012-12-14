@@ -1,0 +1,248 @@
+<!-- SALE仕様中 ※元々のコードは「独自の左側メニュー1」の中にあり -->
+
+<!-- jquery 読み込み -->
+<script type="text/javascript" src="/design/faketokyo/js/jquery-1.4.min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+$('dt.trigger').hover(
+    function() {
+        $(this).addClass('hover');
+    },
+    function() {
+        $(this).removeClass('hover');
+    }
+);
+});
+</script>
+
+<script type="text/javascript">
+$(function(){
+$("dd.open_box").hide();
+$("dt.trigger").click(function(){
+    $(this).next().slideToggle("fast");
+});
+})
+</script>
+
+
+<!--▼左コンテンツ▼-->
+<div id="M_leftContents">
+
+	<!--▼ログインボックス▼-->
+	<div id="login_box">
+		[LOGINTYPEZ]
+	</div>
+
+	<!--▼カテゴリ▼-->
+	<div id="category_list_box">
+		<!-- SHOPここから -->
+		<h3>SHOP</h3>
+		<dl class="accordion">
+			<dt><a href="/shopbrand/086/P">CANDY</a></dt>
+			<dt><a href="/shopbrand/089/P">Sister</a></dt>
+			<!--<dt style="margin-top: 6px"><a href="/html/page41.html">FAKE SHOWROOM</a><br><img src="/design/faketokyo/image_icon/now.jpg" alt="now opening"></dt>   -->
+			<!--<dt><a href="/shopbrand/134/O">Chocomoo "heARTbeat is ART"</a></dt>-->
+		</dl>
+
+		<!-- CATEGORYここから -->
+		<h3>TYPE</h3>
+		<dl class="accordion">
+			<dt class="trigger">MEN'S</dt>
+			<dd class="open_box">
+				<ul>
+					<li><a href="/shopbrand/069/Y">ALL</a></li>
+					<li><a href="/shopbrand/069/001/Y">TOPS</a></li>
+					<li><a href="/shopbrand/069/002/Y">OUTER</a></li>
+					<li><a href="/shopbrand/069/003/Y">PANTS</a></li>
+					<li><a href="/shopbrand/069/005/Y">SHOES</a></li>
+					<li><a href="/shopbrand/069/004/Y">ACCESSORY</a></li>
+					<li><a href="/shopbrand/069/006/Y">BAG</a></li>
+					<li><a href="/shopbrand/069/008/Y">HAT</a></li>
+					<li><a href="/shopbrand/069/009/Y">GOODS</a></li>
+					<li><a href="/shopbrand/069/012/Y">EYEWEAR</a></li>
+				</ul>
+			</dd>
+			<dt class="trigger">LADY'S</dt>
+			<dd class="open_box">
+				<ul>
+					<li><a href="/shopbrand/070/Y">ALL</a></li>
+					<li><a href="/shopbrand/070/001/Y">TOPS</a></li>
+					<li><a href="/shopbrand/070/002/Y">OUTER</a></li>
+					<li><a href="/shopbrand/070/003/Y">ONE-PIECE</a></li>
+					<li><a href="/shopbrand/070/004/Y">PANTS</a></li>
+					<li><a href="/shopbrand/070/005/Y">SKIRT</a></li>
+					<li><a href="/shopbrand/070/006/Y">SHOES</a></li>
+					<li><a href="/shopbrand/070/007/Y">ACCESSORY</a></li>
+					<li><a href="/shopbrand/070/008/Y">BAG</a></li>
+					<li><a href="/shopbrand/070/010/Y">HAT</a></li>
+					<li><a href="/shopbrand/070/009/Y">LEGWEAR</a></li>
+					<li><a href="/shopbrand/070/014/Y">EYEWEAR</a></li>
+					<li><a href="/shopbrand/070/011/Y">GOODS</a></li>
+					<li><a href="/shopbrand/070/012/Y/">OTHER</a></li>
+				</ul>
+			</dd>
+		</dl>
+
+		<!-- CATEGORYここから -->
+		<h3>CATEGORY</h3>
+		<dl class="accordion">
+			<!-- <dt><a id="sale_red_gray" href="http://www.faketokyo.com/shopbrand/193/001/Y/">SALE</a></dt>-->
+			<dt><a href="/shopbrand/088/Y">NEW</a></dt>
+			<dt><a href="/shopbrand/075/001/Y">TOPS</a></dt>
+			<dt><a href="/shopbrand/075/002/Y">OUTER</a></dt>
+			<dt><a href="/shopbrand/075/003/Y">ONE-PIECE</a></dt>
+			<dt><a href="/shopbrand/075/004/Y">PANTS</a></dt>
+			<dt><a href="/shopbrand/075/005/Y">SKIRT</a></dt>
+			<dt><a href="/shopbrand/075/006/Y">SHOES</a></dt>
+			<dt><a href="/shopbrand/075/007/Y">ACCESSORY</a></dt>
+			<dt><a href="/shopbrand/075/008/Y">BAG</a></dt>
+			<dt><a href="/shopbrand/075/010/Y">HAT</a></dt>
+			<dt><a href="/shopbrand/075/009/Y">LEGWEAR</a></dt>
+			<dt><a href="/shopbrand/075/013/Y">EYEWEAR</a></dt>
+			<dt><a href="/shopbrand/075/011/Y">GOODS</a></dt>
+			<dt><a href="/shopbrand/075/012/Y">OTHER</a></dt>
+		</dl>
+
+		<!-- BRAND LISTここから -->
+		<h3>BRAND LIST</h3>
+		<dl class="accordion bland_list">
+			<!-- <dt>2012-13A/W</dt> -->
+			<dd>
+				<ul>
+					<li><a href="/shopbrand/142/O/">Absurd Laboratory</a></li>
+					<li><a href="/shopbrand/114/O/">ADEEN</a></li>
+					<li><a href="/shopbrand/008/O/">ALEX MATTSSON</a>&nbsp;<img src="/design/faketokyo/image_icon/iconN.gif" alt="new"></li>
+				        <li><a href="/shopbrand/135/O/">ALICE BLACK</a></li>
+					<li><a href="/shopbrand/017/O/">AMBUSH</a></li>
+					<li><a href="/shopbrand/003/O/">ASGER JUEL LARSEN</a></li>
+					<li><a href="/shopbrand/110/O/">BACK</a></li>
+					<li><a href="/shopbrand/036/O/">BALMUNG</a></li>
+					<li><a href="/shopbrand/103/O/">bodysong.</a></li>
+					<li><a href="/shopbrand/116/O/">BOLSHIE</a></li>
+					<li><a href="/shopbrand/040/O/">BOY LONDON</a></li>
+					<li><a href="/shopbrand/112/O/">CAMEO</a></li>
+					<li><a href="/shopbrand/009/O/">CANDY Original</a></li>
+                                      <li><a href="/shopbrand/128/O/">CARLY ELLIS</a></li>
+					<li><a href="/shopbrand/085/O/">CASETTE PLAYA</a></li>
+					<li><a href="/shopbrand/092/O/">CHEEK</a></li>
+					<li><a href="/shopbrand/004/O/">CHRISTIAN DADA</a></li>
+                                      <li><a href="/shopbrand/119/O/">CHRISTPHER SHANNON</a></li>
+					<li><a href="/shopbrand/140/O/">COCO DE COEUR</a></li>
+					<li><a href="/shopbrand/052/O/">Curated by Ek Thongprasert</a></li>
+					<li><a href="/shopbrand/083/O/">C-NEWING</a></li>
+					<li><a href="/shopbrand/117/O/">DAVID KOMA</a></li>
+					<li><a href="/shopbrand/026/O/">DISSBORN</a></li>
+					<li><a href="/shopbrand/082/O/">DJ BY DOMINIC JONES</a>&nbsp;<img src="/design/faketokyo/image_icon/iconN.gif" alt="new"></li>
+					<li><a href="/shopbrand/122/O/">DOPE by stampd</a></li>
+					<li><a href="/shopbrand/039/O/">DRESSEDUNDRESSED</a></li>
+					<li><a href="/shopbrand/013/O/">DRYCLEANONLY</a></li>
+					<li><a href="/shopbrand/192/O/">D.TT.K</a></li>
+					<li><a href="/shopbrand/132/O/">egr</a></li>
+					<li><a href="/shopbrand/028/O/">EK THONGPRASERT</a></li>
+                                      <li><a href="/shopbrand/050/O/">EMMA COOK</a></li>
+                                      <li><a href="/shopbrand/043/O/">ERICKSON BEAMON</a></li>
+					<li><a href="/shopbrand/154/O/">fade.</a></li>
+					<li><a href="/shopbrand/074/O/">FANNY AND JESSY</a></li>
+					<li><a href="/shopbrand/124/O/">FEMININE & MASCULINE</a></li>
+                                      <li><a href="/shopbrand/149/O/">GALA</a></li>
+                                      <li><a href="/shopbrand/125/O/">GARETH PUGH</a></li>
+					<li><a href="/shopbrand/077/O/">GERLAN JEANS</a></li>
+                                      <li><a href="/shopbrand/060/O/">GIZA</a></li>
+					<li><a href="/shopbrand/126/O/">HALFMAN</a></li>
+                                      <li><a href="/shopbrand/066/O/">Harris Brown</a>&nbsp;<img src="/design/faketokyo/image_icon/iconN.gif" alt="new"></li>
+					<li><a href="/shopbrand/185/O/">HENRIK VIBSKOV×FABRICK</a>&nbsp;<img src="/design/faketokyo/image_icon/iconN.gif" alt="new"></li>
+					<li><a href="/shopbrand/105/O/">HORACE</a></li>
+                                      <li><a href="/shopbrand/120/O/">HOUSE OF HOLLAND</a>&nbsp;<img src="/design/faketokyo/image_icon/iconN.gif" alt="new"></li>
+                                      <li><a href="/shopbrand/018/O/">JEFFREY CAMPBELL</a></li>
+					<li><a href="/shopbrand/121/O/">JANE BOWLER</a></li>
+                                      <li><a href="/shopbrand/131/O/">JOHNLERY</a></li>
+                                      <li><a href="/shopbrand/123/O/">JOSEPH NIGOGHOSSIAN</a></li>
+                                      <li><a href="/shopbrand/093/O/">JOSEPH TURVEY</a></li>
+					<li><a href="/shopbrand/016/O/">JOYRICH</a>&nbsp;<img src="/design/faketokyo/image_icon/iconN.gif" alt="new"></li>
+					<li><a href="/shopbrand/076/O/">J.W.ANDERSON</a></li>
+                                      <li><a href="/shopbrand/130/O/">KARL ALLEY</a></li>
+                                      <li><a href="/shopbrand/147/O/">KAY KWOK</a></li>
+                                      <li><a href="/shopbrand/032/O/">KIT NEALE</a>&nbsp;<img src="/design/faketokyo/image_icon/iconN.gif" alt="new"></li>
+					<li><a href="/shopbrand/007/O/">KOMAKINO</a></li>
+					<li><a href="/shopbrand/019/O/">KTZ</a></li>
+                                      <li><a href="/shopbrand/118/O/">KYE</a></li>
+					<li><a href="/shopbrand/098/O/">LAMARCK</a></li>
+					<li><a href="/shopbrand/133/O/">LIBRARY BRASS</a></li>
+					<li><a href="/shopbrand/041/O/">LONG CLOTHING</a></li>
+					<li><a href="/shopbrand/023/O/">MAIKO TAKEDA</a></li>
+					<li><a href="/shopbrand/011/O/">MAKIN JAN MA</a></li>
+					<li><a href="/shopbrand/022/O/">Malcolm Guerre</a></li>
+					<li><a href="/shopbrand/145/O/">Maria Francesca Pepe</a></li>
+                                      <li><a href="/shopbrand/148/O/">MARTINE ROSE</a></li>
+					<li><a href="/shopbrand/065/O/">MATTHEW MILLER</a></li>
+					<li><a href="/shopbrand/094/O/">MEMENTISM</a></li>
+					<li><a href="/shopbrand/038/O/">MIKIO SAKABE</a></li>
+					<li><a href="/shopbrand/005/O/">MURRAL</a></li>
+					<li><a href="/shopbrand/047/O/">M.Y.O.B</a></li>
+					<li><a href="/shopbrand/048/O/">NaNa-NaNa</a></li>
+					<li><a href="/shopbrand/021/O/">ONDEV</a></li>
+                                      <li><a href="/shopbrand/020/O/">OS Accessories</a></li>
+                                       <li><a href="/shopbrand/141/O/">PATRICK STEPHAN</a></li>
+					<li><a href="/shopbrand/045/O/">PEACE, LOVE and UNDERSTANDING</a></li>
+                                      <li><a href="/shopbrand/063/O/">PEARL</a></li>
+					<li><a href="/shopbrand/006/O/">Piers Atkinson</a></li>
+					<li><a href="/shopbrand/136/O/">proef</a></li>
+					<li><a href="/shopbrand/031/O/">PUBLIC EYES</a>&nbsp;<img src="/design/faketokyo/image_icon/iconN.gif" alt="new"></li>
+					<li><a href="/shopbrand/027/O/">RENE GURSKOV</a></li>
+					<li><a href="/shopbrand/102/O/">runurunu</a></li>
+					<li><a href="/shopbrand/055/O/">SACHIO KAWASAKI</a></li>
+					<li><a href="/shopbrand/051/O/">SASU KAUPPI</a></li>
+					<li><a href="/shopbrand/081/O/">SHAUN SAMSON</a></li>
+					<li><a href="/shopbrand/033/O/">Simone Rocha</a></li>
+					<li><a href="/shopbrand/079/O/">Sister Original</a>&nbsp;<img src="/design/faketokyo/image_icon/iconN.gif" alt="new"></li>
+					<li><a href="/shopbrand/084/O/">SOPHIE HULME</a></li>
+					<li><a href="/shopbrand/054/O/">Stephen Jones</a></li>
+					<li><a href="/shopbrand/030/O/">tba</a></li>
+                                       <li><a href="/shopbrand/073/O/">UNDERGROUND</a></li>
+                                       <li><a href="/shopbrand/071/O/">UNIF</a></li>
+					<li><a href="/shopbrand/113/O/">VERSUS</a></li>
+					<li><a href="/shopbrand/046/O/">VOID OF COURSE</a></li>	
+					<li><a href="/shopbrand/182/O/">W.I.A</a>&nbsp;<img src="/design/faketokyo/image_icon/iconN.gif" alt="new"></li>
+					<li><a href="/shopbrand/068/O/">WILDFOX</a></li>
+					<li><a href="/shopbrand/127/O/">YAZBUKEY</a></li>
+					<li><a href="/shopbrand/138/O/">YUIMA NAKAZATO</a></li>
+                                       <li><a href="/shopbrand/037/O/">ZAORICK</a></li>
+					<li><a href="/shopbrand/053/O/">99%IS-</a>&nbsp;<img src="/design/faketokyo/image_icon/iconN.gif" alt="new"></li>
+
+<br><br>
+			<!-- <dt>2012S/S</dt> -->
+				</ul>
+			</dd>
+		</dl>
+	</div>
+
+	<!-- ▼facebook▼ -->
+	<div id="facebook_box">
+		<script src="http://connect.facebook.net/en_US/all.js"></script>  
+		<script>  
+			FB.init({  
+				appId  : '',  
+				status : true, // check login status  
+				cookie : true, // enable cookies to allow the server to access the session  
+				xfbml  : true  // parse XFBML  
+			});  
+		</script>
+
+		<div id="fb-root"></div>
+		<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+		<fb:like-box href="http://www.facebook.com/4oh4.php#!/pages/FAKE-TOKYOcom/220035424697208" width="150" show_faces="true" border_color="" stream="false" header="true"></fb:like-box>
+	</div>
+
+	<!-- ▼バナー▼ -->
+	<div id="social_banner_box">
+		<a class="hoverimage" href="http://www.faketokyo.com/shop/idinfo.html"><img src="/design/faketokyo/image_design/500point.jpg" alt=""></a>
+		<a class="hoverimage" href="http://twitter.com/#!/FAKETOKYO_com"><img src="/design/faketokyo/image_design/fake_twitter_banner_3.gif" alt="Follow me on Twitter"></a>
+		<a class="hoverimage" href=[MAILMAGAZINE_URL1] target="_blank"><img src="/design/faketokyo/image_design/mailmagazin_banner.gif" alt="メールマガジン登録・解除"></a>
+		<a class="hoverimage" href="http://www.faketokyo.com/html/newpage.html?code=2#guide_menu03"><img src="/design/faketokyo/image_design/free_shipping.gif" alt="10,000円以上お買い上げで送料無料"></a>
+		<a class="hoverimage" href="http://news.faketokyo.com/?p=526"><img src="/design/faketokyo/image_info/news_info0727a.jpg" alt=""></a>
+		<img src="/design/faketokyo/image_design/mobile2.jpg" alt="">
+	</div>
+</div>
+
+[TRAFFIC]

@@ -1,0 +1,76 @@
+<!-- 会員登録時の約欺 -->
+<style type="text/css">
+
+div#M_wrapper{
+	text-align: left;
+}
+
+h3#M_contract_title{
+	margin: 0 0 40px 0;
+	border-bottom: solid 1px #191919;
+	padding-bottom: 3px;
+	line-height: 20px;
+}
+
+div#M_contract{
+	margin: 20px 0 0 0;
+	width: 630px;
+}
+
+div#M_contract pre{
+	border:1px solid #191919;
+	padding:10px;
+	width:630px;
+	height:400px;
+	overflow: auto;
+	font-size: 13px;
+	text-align:left;
+}
+
+p#contract_button{
+	margin: 30px 0 0 0;
+}
+
+a#contract_ok_button{
+	display: block;
+	border: solid 1px #191919;
+	padding: 8px 15px;
+	width: 120px;
+	float: right;
+	font-size: 13px;
+	text-align: center;
+	color: #fcfcfc;
+	background-color: #191919;
+}
+
+	a#contract_ok_button:hover {
+		color: #909090;
+	}
+
+a#contract_ng_button{
+	display: block;
+	border: solid 1px #191919;
+	padding: 8px 15px;
+	width: 120px;
+	float: right;
+	font-size: 13px;
+	text-align: center;
+}
+
+	a#contract_ng_button:hover {
+		color: #909090;
+	}
+</style>
+
+<div id="M_wrapper">
+	<h3 id="M_contract_title">会員登録</h3>
+	<p>以下の規約に同意される場合は下のボタンをクリックし、次の手続きにお進みください。</p>
+
+	<div id="M_contract">
+		<pre>[CONTRACT]</pre>
+		<p id="contract_button">
+			<a id="contract_ok_button" href="[OK]">同意する</a>
+			<a id="contract_ng_button" href="JavaScript:history.go(-1)">同意しない</a>
+		</p>
+	</div>
+</div>

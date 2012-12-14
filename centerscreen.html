@@ -1,0 +1,258 @@
+<!-- 中央画面 -->
+<!-- メインスライド用のjqueryを読み込み -->
+<script type="text/javascript" src="/design/faketokyo/js/jquery.jshowoff.min.js"></script>
+
+<!-- トップ右下のNEWS、BLOG、SNAPの「一覧へ」ボタンのhoverを制御 -->
+<script type="text/javascript">
+$(function() {
+$("div.media_info a").hover(
+function() {
+&#160;&#160;&#160;&#160;$(this).css("color","#909090");
+},
+function() {
+&#160;&#160;&#160;&#160;$(this).css("color","#191919");
+}
+);
+
+$("div.media_info a.for_wp_index").hover(
+function() {
+&#160;&#160;&#160;&#160;$(this).css("color","#909090");
+},
+function() {
+&#160;&#160;&#160;&#160;$(this).css("color","#fcfcfc");
+}
+);
+});
+</script>
+
+
+<!--▼メインエリアここから下▼-->
+<div id="M_wrapper" class="M_clearfix">
+
+	<!-- ▼メインのスライドショーここから▼ -->
+	<div id="thumbFeatures">
+	<!-- ▼href=""にリンク先、src=""に画像パス。並びは上から1枚目～▼ -->
+		<div><a class="hoverimage" href="http://www.faketokyo.com/shopbrand/031/O/"><img src="/design/faketokyo/image_mainvisual/1202publiceyesmain.jpg" alt=""></a></div>
+		<div><a class="hoverimage" href="http://www.faketokyo.com/shopbrand/182/O/"><img src="/design/faketokyo/image_mainvisual/1128wia1.jpg" alt=""></a></div>
+		<div><a class="hoverimage" href="http://www.faketokyo.com/shopbrand/008/O/"><img src="/design/faketokyo/image_mainvisual/1128alex1.jpg" alt=""></a></div>
+		<div><a class="hoverimage" href="http://www.faketokyo.com/shopbrand/016/O/"><img src="/design/faketokyo/image_mainvisual/1126joyrichmain.jpg" alt=""></a></div>
+		<div><a class="hoverimage" href="http://www.faketokyo.com/shopbrand/120/O/"><img src="/design/faketokyo/image_mainvisual/12awholland2.jpg" alt=""></a></div>
+		<div><a class="hoverimage" href="http://www.faketokyo.com/shopbrand/082/O/"><img src="/design/faketokyo/image_mainvisual/12awdj.jpg" alt=""></a></div>
+		<div><a class="hoverimage" href="http://www.faketokyo.com/shopbrand/063/O/"><img src="/design/faketokyo/image_mainvisual/12awpearl.jpg" alt=""></a></div>
+		<div><a class="hoverimage" href="http://www.faketokyo.com/shopbrand/018/O/"><img src="/design/faketokyo/image_mainvisual/1116jeffreymain.jpg" alt=""></a></div>
+		<div><a class="hoverimage" href="http://www.faketokyo.com/shopbrand/079/O/"><img src="/design/faketokyo/image_mainvisual/1109tightsmain.jpg" alt=""></a></div>
+		<div><a class="hoverimage" href="http://feature.faketokyo.com/?p=2539"><img src="/design/faketokyo/image_mainvisual/1018candymain.jpg" alt=""></a></div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){ $('#thumbFeatures').jshowoff({
+			cssClass: 'thumbFeatures',
+			effect: 'slideLeft'
+		}); });
+	</script>
+
+	<div class="M_clearfix">
+		<!--▼トップ中央ここから▼-->
+		<div id="M_mainContents">
+			<!-- ▼NEW STYLING更新情報▼ -->
+			<div id="staff_styling_box">
+				<h3>NEW STYLING&nbsp;&nbsp;<span style="font-size: 12px">12/3 UP</span></h3>
+				<p id="styling_img_box">
+					<!-- ▼href=""にリンク先、src=""に画像パス。並びは左から1枚目～（MAX:3）▼ -->
+					<a class="hoverimage" href="http://snap.faketokyo.com/?newstyling=%E3%80%90new-styling%E3%80%91no-2412"><img src="/design/faketokyo/image_newstyling/newstyling1114.jpg" alt="" style="margin-left: 23px;"></a>
+					<a class="hoverimage" href="http://snap.faketokyo.com/?newstyling=%E3%80%90new-styling%E3%80%91no-2413"><img src="/design/faketokyo/image_newstyling/newstyling1115.jpg" alt=""></a>
+					<a class="hoverimage" href="http://snap.faketokyo.com/?newstyling=%E3%80%90new-styling%E3%80%91no-2411"><img src="/design/faketokyo/image_newstyling/newstyling1116.jpg" alt=""></a>
+				</p>
+				<p style="margin: 10px 0 0 0; text-align: right;">
+					<a href="http://snap.faketokyo.com/?page_id=77" class="hoverimage"><img src="/design/faketokyo/image_design/for_newstyling.gif"></a>
+				</p>
+			</div>
+
+			<!-- ▼新入荷ボックス▼ -->
+			<div class="new_arrival_box item_box">
+				<h3>NEW ARRIVAL</h3>
+				[NEW1NN]
+				<p class="go_newstyling">
+					<a href="shopbrand/088/Y" class="hoverimage"><img src="/design/faketokyo/image_design/for_newarrival.gif"></a>
+				</p>
+			</div>
+
+			<!-- ▼PRE PREORDER or SALE商品ボックス▼ 
+			<div class="new_arrival_box item_box saleitem_box">
+				<h3>Sister DOMESTIC FAIR 10%OFF ITEM</h3>
+				[SUISEN1NN]
+				<p class="go_newstyling">
+					<a href="http://www.faketokyo.com/shopbrand/183/P/" class="hoverimage"><img src="/design/faketokyo/image_design/for_domestic.jpg"></a>
+				</p>
+			</div>-->
+
+			<!-- ▼入荷情報（縦スクロール）▼ -->
+			<div class="update_box">
+				<!-- <h3>入荷情報</h3> -->
+				<div class="update_images_wrapper">
+					<div class="update_images">
+						<!-- ▼href=""にリンク先、src=""に画像パス。並びは左から1枚目～▼ -->
+　　　　　　　　　　　　　　　　<a class="hoverimage" href="/shopbrand/066/O/"><img src="/design/faketokyo/image_banner/1203harris1.jpg" alt=""></a><br>
+　　　　　　　　　　　　　　　　<a class="hoverimage" href="/shopbrand/031/O/"><img src="/design/faketokyo/image_banner/1202public1.jpg" alt=""></a><br>
+　　　　　　　　　　　　　　　　<a class="hoverimage" href="/shopbrand/008/O/"><img src="/design/faketokyo/image_banner/1128alex1.jpg" alt=""></a><br>
+　　　　　　　　　　　　　　　　<a class="hoverimage" href="/shopbrand/182/O/"><img src="/design/faketokyo/image_banner/1128wia1.jpg" alt=""></a><br>
+　　　　　　　　　　　　　　　　<a class="hoverimage" href="/shopbrand/063/O/"><img src="/design/faketokyo/image_banner/1121pearl1.jpg" alt=""></a><br>
+　　　　　　　　　　　　　　　　<a class="hoverimage" href="/shopbrand/053/O/"><img src="/design/faketokyo/image_banner/1128991.jpg" alt=""></a><br>
+　　　　　　　　　　　　　　　　<a class="hoverimage" href="/shopbrand/016/O/"><img src="/design/faketokyo/image_banner/1126joyrich1.jpg" alt=""></a><br>
+　　　　　　　　　　　　　　　　<a class="hoverimage" href="/shopbrand/082/O/"><img src="/design/faketokyo/image_banner/1123dj1.jpg" alt=""></a><br>
+　　　　　　　　　　　　　　　　<a class="hoverimage" href="/shopbrand/120/O/"><img src="/design/faketokyo/image_banner/1123holland1.jpg" alt=""></a><br>
+　　　　　　　　　　　　　　　　<a class="hoverimage" href="/shopbrand/185/O/"><img src="/design/faketokyo/image_banner/1123fabrick1.jpg" alt=""></a><br>
+　　　　　　　　　　　　　　　　<a class="hoverimage" href="/shopbrand/068/O/"><img src="/design/faketokyo/image_banner/1123wildfox1.jpg" alt=""></a><br>
+					</div>
+				</div>
+			</div>
+
+			<div id="recent_check_box" class="item_box">
+				<h3>最近チェックした商品</h3>
+				[RECENT2]
+			</div>
+		</div>
+
+
+		<!--▼トップ右下のNEWS、BLOG、SNAP更新情報群ここから▼-->
+		<div id="M_rightContents">
+			<div id="twitter_tweetbar">
+				<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+					new TWTR.Widget({
+					  version: 2,
+					  type: 'profile',
+					  rpp: 10,
+					  interval: 6000,
+					  width: 150,
+					  height: 400,
+					  theme: {
+					    shell: {
+					      background: '#191919',
+					      color: '#fcfcfc'
+					    },
+					    tweets: {
+					      background: '#f4f4f4',
+					      color: '#191919',
+					      links: '#0097c5'
+					    }
+					  },
+					  features: {
+					    scrollbar: true,
+					    loop: false,
+					    live: true,
+					    hashtags: true,
+					    timestamp: true,
+					    avatars: false,
+					    behavior: 'all'
+					  }
+					}).render().setUser('FAKETOKYO_com').start();
+				</script>
+			</div>
+
+
+			<!-- ▼NEWS更新情報▼ -->
+			<div id="news_info" class="media_info">
+				<h3>NEWS</h3>
+                                <!-- ■href=""に記事ページURL -->
+				<p><a class="hoverimage" href="http://www.faketokyo.com/shopbrand/022/O/">
+				<!-- ■src=""に画像パス -->
+				<img src="/design/faketokyo/image_info/news_info121122.jpg" alt=""><br>
+				<!-- ■一言 -->
+				Malcolm Guerre Vネックパールネックレス予約受付中！<br>
+				&#9654;アイテムページはこちら
+				</a></p>
+				<br>
+
+                                <!-- ■href=""に記事ページURL -->
+				<p><a class="hoverimage" href="http://feature.faketokyo.com/?p=2788">
+				<!-- ■src=""に画像パス -->
+				<img src="/design/faketokyo/image_info/news_info121031c.jpg" alt=""><br>
+				<!-- ■一言 -->
+				99%IS- 2013S/S LOOK公開！<br>
+				&#9654;FEATUREはこちら
+				</a></p>
+				<br>
+
+                                <!-- ■href=""に記事ページURL -->
+				<p><a class="hoverimage" href="http://feature.faketokyo.com/?p=2724">
+				<!-- ■src=""に画像パス -->
+				<img src="/design/faketokyo/image_info/news_info121031a.jpg" alt=""><br>
+				<!-- ■一言 -->
+				DISSBORN 2013S/S LOOK公開！<br>
+				&#9654;FEATUREはこちら
+				</a></p>
+				<br>
+
+                                <!-- ■href=""に記事ページURL -->
+				<p><a class="hoverimage" href="http://feature.faketokyo.com/?p=2746">
+				<!-- ■src=""に画像パス -->
+				<img src="/design/faketokyo/image_info/news_info121031b.jpg" alt=""><br>
+				<!-- ■一言 -->
+				CHRISTIAN DADA 2013S/S LOOK公開！<br>
+				&#9654;FEATUREはこちら
+				</a></p>
+				<br>
+
+                                <!-- ■href=""に記事ページURL -->
+				<p><a class="hoverimage" href="http://feature.faketokyo.com/?p=2711">
+				<!-- ■src=""に画像パス -->
+				<img src="/design/faketokyo/image_info/news_info121029c.jpg" alt=""><br>
+				<!-- ■一言 -->
+				MURRAL 2013S/S LOOK公開！<br>
+				&#9654;FEATUREはこちら
+				</a></p>
+				<br>
+
+                                <!-- ■href=""に記事ページURL -->
+				<p><a class="hoverimage" href="http://feature.faketokyo.com/?p=2713">
+				<!-- ■src=""に画像パス -->
+				<img src="/design/faketokyo/image_info/news_info121029a.jpg" alt=""><br>
+				<!-- ■一言 -->
+				LAMARCK 2013S/S LOOK公開！<br>
+				&#9654;FEATUREはこちら
+				</a></p>
+				<br>
+
+                                <!-- ■href=""に記事ページURL -->
+				<p><a class="hoverimage" href="http://feature.faketokyo.com/?p=2539">
+				<!-- ■src=""に画像パス -->
+				<img src="/design/faketokyo/image_info/news_info121018.jpg" alt=""><br>
+				<!-- ■一言 -->
+				CANDY 2012-13 AUTUMN AND WINTER STYLING IMAGE PHOTO公開！<br>
+				&#9654;FEATUREはこちら
+				</a></p>
+				<br>
+				
+				<a class="for_wp_index" href="http://news.faketokyo.com">NEWS一覧へ</a>
+			</div>
+
+			<!-- ▼BLOG更新情報▼ -->
+			<div class="media_info">
+				<h3>BLOG</h3>
+				<!-- ■href=""に記事ページURL -->
+				<p><a class="hoverimage" href="http://blog.faketokyo.com/sister/2012/12/01/122-new-styling-domestic-fair%E6%9C%80%E7%B5%82%E6%97%A5/">
+				<!-- ■src=""に画像パス -->
+				<img src="/design/faketokyo/image_info/blog_info1202.jpg" alt=""><br>
+				<!-- ■一言 -->
+				【Sister】12/2 UP<br>
+				New Styling!-DOMESTIC FAIR最終日-<br>
+				</a></p>
+
+				<a class="for_wp_index" href="http://blog.faketokyo.com">BLOG一覧へ</a>
+			</div>
+
+			<!-- ▼SNAP更新情報▼ -->
+			<div class="media_info">
+				<h3>SNAP</h3>
+				<!-- ■href=""に記事ページURL -->
+				<p><a class="hoverimage" href="http://snap.faketokyo.com/?p=33533">
+				<!-- ■src=""に画像パス -->
+				<img src="/design/faketokyo/image_info/snap_info1203.jpg" alt=""><br>
+				<!-- ■一言 -->
+				12/3 UP<br>2枚UP</a></p>
+			
+				<a class="for_wp_index" href="http://snap.faketokyo.com">SNAP一覧へ</a>
+			</div>
+		</div>
+	</div>
+</div></span>

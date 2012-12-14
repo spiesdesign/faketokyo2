@@ -1,0 +1,1332 @@
+/* ******************************
+全ての要素をリセット
+各ブラウザの表示を統一するための設定です
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: arial,'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,sans-serif;
+	line-height: 1.0;
+}
+
+body{
+	font-family: arial,'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,sans-serif;
+}
+
+a{
+	text-decoration: none;
+	outline: none;
+}
+
+img{
+	border: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+pre{
+	line-height: 18px;
+}
+
+/* ******************************
+基本スタイル（MakeShopが作成したと思われるデフォルト設定）
+*/
+
+/*要素を中央揃いに*/
+.M_center{
+	text-align: center;
+}
+
+/*要素を左に*/
+.M_left{
+	text-align: left;
+}
+
+/*要素を右に*/
+.M_right{
+	text-align: right;
+}
+
+/*要素を左に*/
+p{
+	text-align: left;
+}
+
+/*上下のマージンを20px*/
+.M_mgn20{
+	margin: 20px auto;
+}
+
+/*テキスト色を赤に*/
+.M_red{
+	color: #ff0000;
+}
+
+/*テキストを太字に*/
+.M_bold{
+	font-weight: bold;
+}
+
+/* ホバー時の処理 */
+.hover{
+	color: #909090;
+	cursor: pointer;
+}
+
+/* ******************************
+基本スタイル（小山作成のデフォルトスタイル）
+*/
+
+body{
+	background-color: #ffffff;
+}
+
+h3{
+	font-size: 14px;
+	color: #191919;
+}
+
+p{
+	font-size: 13px;
+	line-height: 21px;
+	color: #191919;
+}
+
+a.underline{
+	border-bottom: solid 1px #191919;
+	padding-bottom: 1px;
+}
+
+a:link , a:visited , a:hover , a:active {
+	color: #191919;
+	outline: none;
+}
+
+a:hover {
+	color: #909090;
+}
+
+hr{
+	color: #191919;
+}
+
+p.red_color{
+	color: #cc0000;
+}
+
+a.hoverimage:hover img{
+ 	opacity: 0.8;
+ 	filter: alpha(opacity=80);
+ 	-ms-filter: "alpha( opacity=80 )";
+}
+
+a#sale_red_gray{
+ 	color: #cc0000;
+}
+
+a#sale_red_gray:hover {
+ 	color: #909090;
+}
+
+
+/* clearfix */
+.M_clearfix:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+	/* for IE6 */
+	* html .M_clearfix {
+		zoom: 100%;
+	}
+	
+	/* for IE7 */
+	*+html .M_clearfix {
+		zoom: 100%;
+  }
+
+/* ******************************
+#M_container
+全体を覆うコンテンツ
+*/
+
+#M_container {
+	width: 989px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#makebanner{
+	width: 780px;
+	position: relative;
+}
+
+/* ******************************
+#M_wrapper
+トップ中央画面と右メニューを内包
+*/
+
+#M_wrapper{
+  margin-top: 25px;
+  margin-left: 65px;
+  width: 750px;
+  position: relative;
+}
+
+/* @media screen and (-webkit-min-device-pixel-ratio:0) {
+  #M_wrapper {
+		margin-left: 65px;
+	}
+} hack for webkit */
+
+/* ******************************
+#M_header
+ヘッダー
+*/
+
+#M_logo{
+      margin-top: 20px;
+		float: left;
+}
+
+div#right_header{
+	margin-top: 38px;
+	margin-bottom: 17px;
+	margin-bottom: 0px\9;/* hack for ie */
+	float: right;
+}
+
+	div#right_header, x:-moz-any-link {
+		margin-top: 37px;
+	}/* hack for firefox */
+
+	div#right_header{
+		margin-top: 38px\9;
+	}/* hack for ie */
+
+	div#right_header a{
+		display: block;
+		padding: 0 20px 0 20px;
+		float: left;
+		font-size: 14px;
+	}
+
+	div#right_header a:first-child {
+		border-right: solid 1px #191919;
+	}
+
+	div#right_header a img{
+		padding: 0 6px 0 0;
+		margin-right: 6px\9;
+	}
+
+	div#right_header form{
+		float: left;
+	}
+
+input#search_box{
+	border: solid 1px #191919;
+	width: 142px;
+	height: 22px;
+	font-size: 17px;
+}
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		input#search_box{
+			position: relative;
+			top: 1px;
+		}
+	}/* hack for webkit */
+
+input#submit_button{
+	border: solid 1px #191919;
+	padding-top: 1px\9;/* hack for ie */
+	width: 40px;
+	height: 22px;
+	font-size: 12px;
+	color: #ffffff;
+	background-color: #191919;
+	position: relative\9;/* hack for ie */
+	top: 0px\9;/* hack for ie */
+}
+
+	*+html input#submit_button{
+		position: relative;
+		bottom: 0;
+	}/* hack for ie7 */
+
+	input#submit_button, x:-moz-any-link {
+		position: relative;
+		bottom: 1px;
+	}/* hack for firefox */
+
+	input#submit_button:hover {
+		color: #909090;
+		cursor: pointer;
+	}
+
+div#navigation_box{
+	margin: 14px 0 0 0;
+	position: relative;
+	z-index: 2;
+}
+
+ul#global_navigation li{
+	float: left;
+}
+
+	ul#global_navigation li a{
+		display: block;
+		margin-right:1px;
+		padding: 12px 0 12px 0;
+		padding-top: 13px\9;/* hack for ie */
+		padding-bottom: 11px\9;/* hack for ie */
+		width: 164px;
+		float: left;
+		font-size: 14px;
+		text-align: center;
+		color: #ffffff;
+		background-color: #191919;
+	}
+
+	ul#global_navigation a:hover {
+		color: #909090;
+	}
+
+	ul#global_navigation a#last_gnavi{
+		margin-right: 0px;
+	}
+
+div#navigation_box h2 img{
+	padding: 10px 0 0 0;
+	float: left;
+}
+
+/*
+ul#sub_navigation{
+	position: absolute;
+	right: 0;
+	bottom: 5px;
+}
+
+	ul#sub_navigation li{
+		margin-left: 104px;
+		float: left;
+	}
+
+	ul#sub_navigation li a{
+		font-size: 14px;
+	}
+*/
+
+a#go_shopping_guide, x:-moz-any-link {
+	position: relative;
+	top: 2px;
+}/* hack for firefox */
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		a#go_shopping_guide{
+			position: relative;
+			top: 2px;
+		}
+	}/* hack for webkit */
+
+	a#go_shopping_guide{
+		position: relative\9;
+		top: 0px\9;
+		border-right: solid 1px #191919\9;
+		margin-top: 3px\9;
+	}/* hack for ie */
+
+a#go_shopping_guide img{
+	position: relative;
+	top: 1px\9;/* hack for ie */
+}
+
+a#go_shopping_cart{
+	position: relative;
+	top: 3px\9;/* hack for ie */
+}
+
+/* ******************************
+フッター
+*/
+
+#M_footer{
+	width: 989px;
+}
+
+div.foot_navigation{
+	margin: 0 0 1px 0;
+	float: right;
+}
+
+	div.foot_navigation a{
+		display: block;
+		margin: 0 0 0 1px;
+		width: 210px;
+		float: right;
+		font-size: 14px;
+		text-align: center;
+		color: #ffffff;
+		background-color: #191919;
+	}
+
+	div.foot_navigation a:hover {
+		color: #909090;
+	}
+
+	div.foot_navigation a img{
+		margin: 0 6px 0 0;
+		position: relative;
+		top: 1px;
+	}
+
+div#foot_navi_upper a{
+	padding: 6px 0 6px 0;
+	font-size: 15px;
+	color: #ffffff;
+}
+
+div#foot_navi_under, x:-moz-any-link {
+	margin-bottom: 0px;
+}/* hack for firefox */
+
+	div#foot_navi_under a{
+		padding: 10px 0 10px 0;
+      margin-bottom: 1px;
+		color: #ffffff;
+	}
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+  	div#foot_navi_under a{
+      	margin-bottom: 0px;
+		}
+	}/* hack for webkit */
+
+div#link_and_address{
+	height: 175px;
+	clear: both;
+	position: relative;
+	color: #ffffff;
+	background-color: #191919;
+}
+
+div#links{
+	padding: 20px 0 0 20px;
+}
+
+	div#links ul{
+		padding: 5px 0 0 0;
+	}
+
+	div#links ul li{
+		text-indent: 1em;
+	}
+
+	div#links ul li a{
+		font-size: 14px;
+		line-height: 20px;
+		color: #ffffff;
+	}
+
+	div#links ul li a:hover {
+		color: #909090;
+	}
+
+div#address{
+	position: absolute;
+	right: 20px;
+	top: 51px;
+}
+
+	div#address img{
+		margin: 0 0 20px 0;
+	}
+
+	div#address p{
+		color: #ffffff;
+	}
+
+/* ******************************
+左メニュー
+*/
+
+#M_leftContents{
+  margin-top: 25px;
+	float:left;
+	width:170px;
+	background:#ffffff;
+}
+
+div#login_box{
+	border: solid 1px #cccccc;
+	width: 170px;
+	height: 173px;
+}
+
+	div#login_box input{
+		border: solid 1px #191919;
+		width: 98px;
+		width: 97px\9;
+		height: 20px;
+	}
+
+	div#login_box p#login_button{
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	div#login_box p#id_box{
+		margin-top: 18px;
+		margin-top: 15px\9;/* hack for ie */
+		margin-left: 40px;
+		text-align: left;
+	}
+
+	div#login_box p#pass_box{
+		margin-top: 10px;
+		margin-left: 16px;
+		text-align: left;
+	}
+
+	div#login_option{
+		padding-top: 5px;
+		padding-left: 16px;
+	}
+
+	div#login_option p{
+		padding-top: 7px;
+	}
+
+	div#login_option a{
+		font-family: arial,'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,sans-serif;
+		font-size: 11px;
+	}
+	
+	div#login_option a:hover {
+		color: #909090;
+	}
+
+
+div#category_list_box{
+	margin: 25px 0 0 0;
+}
+	
+	div#category_list_box h3{
+		margin: 30px 0 0 0;
+		padding: 0 0 3px 0;
+		border-bottom: solid 1px #191919;
+		font-size: 13px;
+		color: #191919;
+	}
+
+	dl.accordion dt{
+		margin: 4px 0 0 0;
+		padding-left: 1em;
+		font-size: 15px;
+		line-height: 19px;
+		color: #191919;
+	}
+
+	dl.accordion dt.trigger:hover {
+		color: #909090;
+	}
+
+	dl.accordion dt a{
+		font-size: 15px;
+		line-height: 19px;
+		color: #191919;
+	}
+
+	dl.accordion dt a:hover {
+		color: #909090;
+	}
+
+	dl.accordion dd ul li{
+		margin: 5px 0 0 0;
+		padding-left: 2em;
+		font-size: 14px;
+		color: #191919;
+	}
+
+	dl.accordion dd ul li a{
+		font-size: 14px;
+		color: #191919;
+	}
+
+	dl.accordion dd ul li a:hover {
+		color: #909090;
+	}
+
+dl.bland_list dd ul li{
+	padding-left: 1em;
+}
+
+dl.bland_list dd ul li a{
+	font-size: 12px;
+}
+
+div.notation{
+	margin: 50px 0 0 0;
+	margin: 0 0 0 0\9;
+}
+
+	div.notation h3{
+		font-size: 14px;
+		padding: 0 0 3px 0;
+		border-bottom: solid 1px #191919;
+	}
+
+/* ******************************
+中央部分
+*/
+
+#M_mainContents {
+	margin-top: 100px;
+	margin-top: 50px\9;/* hack for ie */
+	float:left;
+	width:550px;
+	text-align: left;
+}
+
+div.update_box{
+	width: 550px;
+	margin-top: 320px;
+	margin-top: 30px\9;/* hack for ie */
+}
+
+	div.update_box h3{
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+div.update_images_wrapper{
+	width: 550px;
+}
+
+div.update_images a img{
+	margin: 5px 3px 0 0;
+	border: solid 1px #cccccc;
+	width: 550px;
+}
+
+/* ************************************************************************** */
+div.item_box{
+	margin: 30px 0 0 0;
+	width: 550px;
+	height: 640px;/* 商品表示を3列にする場合は400pxに、2列の場合は200pxに */
+}
+
+	div.item_box h3{
+		margin-bottom: 10px;
+		border-bottom: solid 1px #cccccc;
+		padding-bottom: 3px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	div.item_box table#recent tbody tr td.itemBox table tbody tr td p{
+		font-size: 11px;
+		line-height: 16px;
+	}
+
+	div.item_box table#recent tbody tr td.line img{
+		display: none;
+	}
+
+div.saleitem_box{
+	padding-top: 350px;
+	padding-top: 0px\9;
+}
+
+	div.saleitem_box table tbody tr td table tbody tr td{
+		color: #cc0000;
+	}
+
+div.new_arrival_box h3{
+	font-size: 14px;
+}
+
+	div.new_arrival_box table tbody tr td table tbody tr td a{
+		font-size: 11px;
+		line-height: 16px;
+	}
+
+	div.new_arrival_box table tbody tr td table tbody tr td{
+		font-size: 11px;
+		line-height: 16px;
+	}
+
+	div.new_arrival_box table tbody tr td table tbody tr td a:hover img{
+  		opacity:0.8;
+  		filter:alpha(opacity=80);
+  		-ms-filter: "alpha( opacity=80 )";
+	}
+
+	div.new_arrival_box table tbody tr td table tbody tr td a img{
+		width: 130px;
+	}
+
+div#staff_styling_box h3{
+	margin: 0 0 10px 0;
+	border-bottom: solid 1px #cccccc;
+	padding-bottom: 3px;
+	font-size: 14px;
+}
+
+	div#staff_styling_box p#styling_img_box a img{
+		margin: 0 20px 0 0;
+		border: solid 1px #cccccc;
+		width: 150px;
+	}
+
+p.go_newstyling{
+	margin: 10px 0 0 0;
+	text-align: right;
+	position: relative;
+	top: -20px;
+}
+
+div#recent_check_box{
+	padding-top: 0px\9;/* hack for ie */
+	height: 300px;
+}
+
+	div#recent_check_box h3{
+		padding-top: 10px;
+	}
+
+	div#recent_check_box td.itemBox table tbody tr td a img{
+		width: 140px;
+	}
+
+	div#recent_check_box td.itemBox table tbody tr td a img:hover {
+  		opacity:0.8;
+  		filter:alpha(opacity=80);
+  		-ms-filter: "alpha( opacity=80 )";
+	}
+
+	div#recent_check_box td.itemBox table tbody tr td a{
+		font-size: 11px;
+		line-height: 16px;
+	}
+
+div#twitter_widget{
+	margin-bottom: 100px;
+}
+
+#messeage{
+	margin-bottom:10px;
+}
+
+#M_mainContents table{
+	margin-bottom:10px;
+}
+
+#twitter_tweetbar{
+	margin-bottom: 35px\9;/* hack for ie */
+}
+
+.twtr-widget h4 a{
+	font-size: 11px;
+}
+
+.twtr-tweet-text p , .twtr-tweet-text a{
+	font-size: 11px;
+}
+
+/* ******************************
+右メニュー
+*/
+
+#M_rightContents{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-top: 50px\9;/* hack for ie */
+	float: right;
+	width:150px;
+	background:#ffffff;
+}
+
+div#facebook_box{
+	margin: 40px 0 0 0;
+}
+
+div#social_banner_box{
+	margin: 50px 0 70px 0;
+}
+
+	div#social_banner_box a img{
+		margin-bottom: 15px;
+	}
+
+div.media_info{
+  margin: 35px 0 0 0;
+  text-align: left;
+}
+
+	div.media_info:first-child {
+		margin-top: 0;
+	}
+
+div#news_info {
+	margin-top: 0\9;
+}
+
+div.media_info h3{
+	padding: 0 0 3px 0;
+	border-bottom: solid 1px #191919;
+}
+
+	div.media_info img{
+		margin: 10px 0 5px 0;
+	}
+
+	div.media_info p a{
+		margin: 5px 0 0 0;
+		width: 125px;
+		font-size: 11px;
+		line-height: 18px;
+	}
+
+	div.media_info a.for_wp_index{
+		display: block;
+		margin: 5px 0 0 0;
+		padding: 8px 0 8px 0;
+		width: 125px;
+		font-size: 13px;
+		text-align: center;
+      color: #ffffff;
+		background-color: #191919;
+	}
+
+	div.media_info a.for_wp_index:hover {
+		color: #909090;
+	}
+
+div.right_notation h3{
+	font-size: 12px;
+}
+
+	div.right_notation p{
+		font-size: 12px;
+	}
+
+#M_rightContents table{
+	margin-bottom:10px;
+}
+
+/* ******************************
+会員登録・修正
+*/
+
+div#form01, x:-moz-any-link {
+	position: relative;
+	left: -64px;
+}/* hack for firefox */
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+  	div#form01{
+			position: relative;
+			left: 50px;
+		}
+	}/* hack for webkit */
+
+div#form01{
+	position: relative\9;
+	left: -11px\9;
+	position: relative;
+	top: -13px;
+}
+
+	div#form01 p{
+		margin-left: 0;
+	}
+
+	div#form01 table#table01{
+		width: 600px;
+	}
+
+	div#form01 table#table01 tbody tr th{
+		border-color: #909090;
+		font-size: 13px;
+		background-color: #ffffff;
+	}
+
+	div#form01 table#table01 tbody tr td{
+		border-color: #909090;
+		background-color: #ffffff;
+	}
+
+/* ******************************
+商品分類ページ・基本部分
+*/
+
+p#brand_banner img{
+	width: 750px;
+}	
+
+p#brand_detail{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+p#pankuzu{
+	font-size: 14px;
+	text-align: left;
+}
+
+p#pankuzu a font{
+	color: #191919;
+}
+
+p#pankuzu a font:hover {
+	color: #909090;
+}
+
+p#sub_category_link{
+	margin-top: 3px;
+	margin-top: 0px\9;/* hack for ie */
+	border: solid 1px #191919;
+	padding-bottom: 12px;
+	font-size: 13px;
+}
+
+div#number_and_sort{
+	margin-top: 20px;
+}
+
+p#numer_of_item{
+	float: left;
+}
+
+p#sort_button{
+	float: right;
+}
+
+div#general_itembox{
+	clear: both;
+	margin-bottom: 100px;
+}
+
+/* 古い分類ページのCSS ※いずれ要らなくなる部分 */
+div#general_itembox table tbody tr td table tbody tr td a{
+  font-size: 12px;
+	line-height: 16px;
+}
+
+div#general_itembox table tbody tr td table tbody tr td a img:hover {
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	-ms-filter: "alpha( opacity=80 )";
+}
+
+div#general_itembox table tbody tr td.line img{
+	display: none;
+}
+
+div#general_itembox table tbody tr td.line{
+	background-image: none;
+}
+
+div#general_itembox table tbody tr td table tbody tr td font{
+	font-size: 12px;
+	line-height: 16px;
+}
+
+div#general_itembox table tbody tr td table tbody tr td font b{
+	color: #191919;
+	font-size: 12px;
+	line-height: 16px;
+}
+/* ここまで 古い分類ページのCSS */
+
+/* 新しい分類ページのCSS ※順次切り替え */
+ul.M_innerList li {float:left; width: 33%; height: 330px;}
+	ul.M_innerList li span.zaiko_red {font-size: 11px; color: #ff0000;}
+div.M_cl_imgWrap img.M_cl_img {border: none; width: 200px;}
+	div.M_cl_imgWrap img.M_cl_img:hover {opacity:0.8; filter:alpha(opacity=80); -ms-filter: "alpha( opacity=80 )";}
+div.M_cl_detail {margin: 20px 0 0 0; width: 200px;}
+	div.M_cl_detail p.M_cl_name {text-align: center;}
+	div.M_cl_detail p.M_cl_name a {font-size: 12px; line-height: 16px;}
+	div.M_cl_detail p.M_cl_price {text-align: center; margin: 5px 0 0 0;}
+/* ここまで 新しい分類ページのCSS */
+
+/* ******************************
+商品詳細（表示）ページ・基本部分
+(商品分類ページと被る部分もあるが、分かりやすいようあえて残しておく)
+*/
+
+p#M_pankuzu font{
+	color: #191919;
+}
+
+p#M_pankuzu font:hover {
+	color: #909090;
+}
+
+div#Detail_box{
+      margin-top: 35px;
+}
+
+div#M_imgDetail{
+	float: left;
+	width: 340px;
+	text-align: left;
+}
+
+div#M_itemInfo{
+	float: right;
+	width: 350px;
+	text-align: left;
+}
+
+h3#M_itemName{
+	padding: 2px;
+	font-weight: normal;
+	line-height: 20px;
+	background-color: #efefef;
+}
+
+p#price{
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+p#quantity{
+	border-top: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+	padding: 5px 0;
+	font-size: 14px;
+}
+
+p#item_code{
+	border-bottom: solid 1px #cccccc;
+	padding: 5px 0;
+}
+
+p#quantity input{
+  margin-top: 10px;
+  border: solid 1px #191919;
+}
+
+a#quantity_upcount{
+	position: relative;
+	top: -9px;
+	top: -11px\9;
+}
+
+a#quantity_downcount{
+	position: relative;
+	left: -15px;
+	bottom: -7px;
+}
+
+div#option_box{
+	font-size: 13px;
+}
+
+	div#option_box select#spcode{
+		margin-top: 15px;
+		font-size: 13px;
+	}
+
+	div#option_box p.stockTitle{
+		font-size: 13px;
+		font-weight: normal;
+	}
+
+	div#option_box span.hosoku{
+		display: none;
+	}
+
+p#soldout{
+	margin-top: 20px;
+	font-size: 14px;
+	color: #ff0000;
+}
+
+div#social_box{
+	margin: 15px 0 0 0;
+}
+
+ul#help_list{
+	margin: 15px 0 0 0;
+}
+
+ul#help_list li a{
+	font-size: 13px;
+	line-height: 21px;
+}
+
+div#action_box{
+	margin-top: 25px;
+	position: relative;
+}
+
+a#wishlist_in img{
+	margin-top: 14px;
+}
+
+h4{
+	margin-top: 50px;
+	border-bottom: solid 1px #191919;
+	padding-bottom: 3px;
+      text-align: left;
+}
+
+p#M_itemDetail{
+	margin-top: 10px;
+}
+
+p#M_itemList{
+	margin-top: 40px;
+	position: relative;
+}
+
+a#prev_item{
+	display: block;
+	width: 100px;
+}
+
+	a#prev_item img{
+		margin-right: 6px;
+		position: relative;
+		top: 2px;
+	}
+
+a#next_item{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+	a#next_item img{
+		margin-left: 6px;
+		position: relative;
+		top: 2px;
+	}
+
+h4#group_list_title{
+	margin-top: 100px;
+	border-bottom: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div#general_itembox{
+	clear: both;
+	margin: 50px 0 100px 0;
+}
+
+div#general_itembox table tbody tr td table tbody tr td a{
+	font-size: 12px;
+	line-height: 16px;
+}
+
+div#general_itembox table tbody tr td table tbody tr td a img{
+	height: 130px;
+}
+
+
+div#general_itembox table tbody tr td.line img{
+	display: none;
+}
+
+div#general_itembox table tbody tr td.line{
+	background-image: none;
+}
+
+div#general_itembox table tbody tr td table tbody tr td font b{
+	color: #191919;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+#M_itemInfo div.M_inventory p.stockTxt{
+	margin: 0;
+}
+
+.M_inventory p.stockTxt{
+	margin: 0;
+}
+
+/*---------------------------------------------------------
+Title:          jShowOff: a jQuery Content Rotator Plugin
+Author:          Erik Kallevig
+Version:     0.1.2
+Website:     http://ekallevig.com/jshowoff
+License:      Dual licensed under the MIT and GPL licenses.
+---------------------------------------------------------*/
+
+/*-- jShowOff module styles --*/
+#features, #slidingFeatures, #labelFeatures, #basicFeatures, #thumbFeatures {
+   background: #ffffff;
+   position: relative;
+   overflow: hidden;
+   width: 750px;
+   height: 300px;
+}
+
+.jshowoff {
+   width: 750px;
+}
+
+.jshowoff div {     
+   width: 750px;
+   height: 300px;
+}
+
+.jshowoff div p, .jshowoff div h2 {
+   _background-color: #ffffff;/* hack for ie */
+}
+
+.jshowoff h2, .jshowoff p {
+   font-size: 18px;
+   margin: 0;
+}
+
+.jshowoff p {
+   font-size: 13px;
+   line-height: 15px;
+}
+
+.eddie {
+   float: right;
+}
+
+.jshowoff p.jshowoff-slidelinks {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   margin: 0;
+   padding: 0;
+}
+
+.jshowoff-slidelinks a, .jshowoff-controls a {
+   display: block;
+   background-color: #ffffff;
+   color: #ffffff;
+	 float: left;
+   text-decoration: none;
+   outline: none;
+   font-size: 11px;
+   line-height: 14px;
+}
+
+.jshowoff-slidelinks a:hover, .jshowoff-controls a:hover {
+   color: #ffffff;
+}
+
+.jshowoff-slidelinks a.jshowoff-active, .jshowoff-slidelinks a.jshowoff-active:hover {
+   background-color: #ffffff;
+   color: #ffffff;
+}
+
+p.jshowoff-controls {
+   background: #aaa;
+   overflow: auto;
+   height: 1%;
+   margin: 0;
+}
+
+.jshowoff-controls a {
+   font-size: 12px;
+   line-height: 15px;
+}
+
+.jshowoff-pausetext {
+   color: #ffffff;
+}
+
+/*-- Re-styled Thumbnail Demo --*/
+
+.thumbFeatures p.jshowoff-slidelinks {
+   background: #ffffff;
+   bottom: 0px;
+   bottom: -2px\9;/* hack for ie */
+   right: 0px;
+   height: 32px;/* ここ元々32px */
+   display: none;/* サムネイルを見せない */
+}
+
+.thumbFeatures .jshowoff-slidelinks a {
+   display: block;
+   width: 60px;
+   height: 30px;
+   background-color: none;
+   background-repeat: no-repeat;
+   padding: 0;
+   border: 1px solid #191919;
+   text-indent: -10000em;
+}
+
+.thumbFeatures .jshowoff-slidelinks a.jshowoff-active {
+   border: 1px solid #ffffff;
+}
+
+.thumbFeatures p.jshowoff-controls {
+   background: none;
+   height: 38px;
+   overflow: visible;
+   padding: 0;
+   position: absolute;
+   top: 300px;
+   z-index: 150;
+}
+
+.thumbFeatures .jshowoff-controls a {
+   display: block;
+   width: 22px;
+   height: 38px;
+   background: none;
+   background-repeat: no-repeat;
+   margin: 0;
+   padding: 0;
+   text-indent: -10000em;
+   position: absolute;
+}
+
+/* 白矢印アイコンはここのバックグラウンドイメージ */
+.thumbFeatures .jshowoff-controls a.jshowoff-prev {
+   left: 5px;
+   left: -365px\9;/* hack for ie */
+   background-image: url("http://faketokyo.com/design/faketokyo/image_design/jshowoff_prev.gif");
+}
+
+.thumbFeatures .jshowoff-controls a.jshowoff-next {
+   right: -745px;
+   left: 348px\9;/* hack for ie */
+   background-image: url("http://faketokyo.com/design/faketokyo/image_design/jshowoff_next.gif");
+}
+
+.thumbFeatures:hover .jshowoff-controls:hover a.jshowoff-prev:hover {
+   left: 0;
+}
+
+.thumbFeatures:hover .jshowoff-controls:hover a.jshowoff-next:hover {
+   right: -750px;
+}
+
+.thumbFeatures .jshowoff-controls a.jshowoff-play {
+   display: none;
+}
+
+.jshowoff.thumbFeatures {
+   height: 250px;
+}

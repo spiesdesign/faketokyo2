@@ -1,0 +1,246 @@
+<!-- 買い物カゴページ -->
+<style type="text/css">
+h3#cart_midashi{
+	padding: 0 0 3px 0;
+	border-bottom: solid 1px #191919;
+	text-align: left;
+	position: relative;
+	top: -17px;
+	top: -34px\9;
+}
+
+	h3#cart_midashi img{
+		margin-right: 6px;
+	}
+
+p#cart_notation{
+	margin-top: 30px;
+	margin-top: 20px\9;
+	font-size: 13px;
+}
+	
+table.cart_table, x:-moz-any-link {
+	position: relative;
+	left: 32px;
+}/* hack for firefox */
+
+table.cart_table{
+	margin-top: 30px;
+	border-collapse: collapse;
+	width: 750px;
+	position: relative\9;
+	left: 66px\9;
+}
+
+	table.cart_table tr td{
+		padding: 5px;
+		font-size: 13px;
+	}
+
+	table.cart_table tr.cart_table_midashi td{
+		border-bottom: solid 1px #191919;
+	}
+
+div#links_and_price, x:-moz-any-link {
+	position: relative;
+	left: 32px;
+}/* hack for firefox */
+
+div#links_and_price{
+	clear: both;
+	margin-top: 0px;
+	border-top: solid 1px #191919;
+	width: 750px;
+	position: relative\9;
+	left: 66px\9;
+}
+	
+div#cart_links{
+	padding-top: 10px;
+}
+
+	div#cart_links a{
+		margin-right: 20px;
+		display: block;
+		float: left;
+		font-size: 13px;
+	}
+
+p#total_price{
+	float: right;
+	font-weight: bold;
+}
+	
+div#send_buttons, x:-moz-any-link {
+	clear: both;
+	position: relative;
+	left: 32px;
+}/* hack for firefox */
+
+div#send_buttons{
+	clear: both;
+	margin-top: 50px;
+	margin-top: 20px\9;
+	width: 750px;
+	position: relative\9;
+	left: 66px\9;
+}
+
+	div#send_buttons a{
+		display: block;
+		border: solid 1px #191919;
+		padding: 8px 20px;
+		font-size: 13px;
+	}
+
+a#go_order_flow{
+	float: left;
+	color: #fcfcfc;
+	background-color: #191919;
+}
+
+	a#go_order_flow:hover {
+		color: #909090;
+	}
+
+p#item_nothing{
+	clear: both;
+	margin-top: 20px;
+	line-height: 20px;
+}
+
+p#item_nothing+table{
+	display: none;
+}
+
+div#wishlist_header, x:-moz-any-link {
+	position: relative;
+	left: 32px;
+}/* hack for firefox */
+
+div#wishlist_header{
+	clear: both;
+	margin-top: 200px;
+	margin-top: 100px\9;
+	width: 750px;
+	position: relative\9;
+	left: 66px\9;
+}
+
+h3#wishlist_midashi{
+	text-align: left;
+}
+
+p#wishlist_notation{
+	margin-top: 20px;
+}
+
+table#wishlist_table{
+	margin-top: 20px;
+}
+</style>
+
+<!--▼メインコンテンツ▼-->
+<div id="M_wrapper">
+
+	<h3 id="cart_midashi"><img src="/design/faketokyo/image_design/cart_white.png" alt="" />SHOPPING CART</h3>
+	<p id="cart_notation">※数量を変更された場合は「修正」をクリックして下さい。商品の合計を再計算することができます。</p>
+
+	<!--▼買い物かごに商品があった場合-->
+	[IFBASKET]
+	<table class="cart_table">
+		<form name="forms">
+		<tr class="cart_table_midashi">
+			<td>番号</td>
+			<td> </td>
+			<td>商品名</td>
+			<td>数量</td>
+			<td>価格</td>
+			<td> </td>
+		</tr>
+        </form>
+
+		<!--▼ここから買い物かごに商品一つに関する内容-->
+		[FORBASKET]
+		<tr>
+			<td>[BASKET_NUM]</td>
+			<td>[BASKET_IMG]</td>
+			<td style="width: 350px">[BASKET_BRANDNAME][BASKET_ADDCODE1]</td>
+			<td>[BASKET_QUANTITY]
+				<a class="underline" href=[BASKET_UPDATE] class="mini_cart_button">修正</a>
+			</td>
+			<td>[BASKET_PRICE]円<br>[BASKET_RESERVE]ポイント</td>
+			<td><a class="underline" href=[BASKET_DEL] class="mini_cart_button">削除する</a></td>
+		</tr>
+		<!--▼商品に対するオプション記述-->
+		[IFOPTION]
+		<tr>
+			<td> </td>
+			<td colspan="5">[BASKET_OPTION]</td>
+		</tr>
+		[IFENDOPTION]
+		<!--▲ここまで　オプション-->
+		[FORENDBASKET]
+		<!-- ▲ここまで買い物かご -->
+		
+	</table>
+
+	<div id="links_and_price">
+		<div id="cart_links" class="M_clearfix">
+			<a href="/html/newpage.html?code=2#guide_menu02">→ お支払いについて</a>
+			<a href="/html/newpage.html?code=2#guide_menu03">→ お届けについて</a>
+			<a href="/html/newpage.html?code=2#guide_menu04">→ 商品について</a>
+		</div>
+		<!--▼最終価格-->
+		<p id="total_price">計 [BASKET_TOTALPRICE]<br><span style="color: #cc0000; font-weight: bold;">[CARRIAGE_MSG1]</span></p>
+	</div>
+
+	<!--▼買い物かごが空の場合-->
+	[IFELSEBASKET]
+	<p id="item_nothing">買い物かごに商品がありません。</p>
+	[IFENDBASKET]
+
+	<!--▼ボタン-->
+	<div id="send_buttons" class="M_clearfix">
+		<a href=[GOSHOPPING] style="float: left; margin-right: 5px;">← お買い物を続ける</a>
+		<a href=[CLEAR_BASKET] style="float: left; margin-right: 5px;">カートを空にする</a>
+		<a href=[ORDER] id="go_order_flow">
+			ご注文手続きへ →
+		</a>
+	</div>
+
+	[IFWISH]
+	<!--▼ウォッチリスト-->
+	<div id="wishlist_header">
+		<h3 id="wishlist_midashi">ウォッチリスト</h3>
+		<p id="wishlist_notation">※最大10個まで商品を追加できます。</p>
+	</div>
+
+	<table id="wishlist_table" class="cart_table">
+		<tr class="cart_table_midashi">
+		<form name=formwish>
+			<td> </td>
+			<td>商品名</td>
+			<td>在庫</td>
+			<td>数量</td>
+			<td>価格</td>
+			<td> </td>
+        </form>
+		</tr>
+
+	[FORWISH]
+		<tr>
+			<td>[WISH_IMG]</td>
+			<td>[WISH_BRANDNAME]</td>
+			<td>[WISH_STOCK]</td>
+			<td>[WISH_QUANTITY]</td>
+			<td>[WISH_PRICE]</td>
+			<td>
+				<a class="underline" href=[WISH_GOBASKET] class="mini_cart_button">カートに入れる</a>
+				<a class="underline" href=[WISH_DEL] class="mini_cart_button" style="margin-left: 2px;">削除する</a>
+			</td>
+		</tr>
+	[FORENDWISH]
+	</table>
+	[IFENDWISH]
+</div>

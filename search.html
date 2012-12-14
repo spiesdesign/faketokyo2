@@ -1,0 +1,117 @@
+<!-- 商品検索画面 -->
+<style type="text/css">
+div#M_wrapper{
+	text-align: left;
+}
+
+h3#search_form_title{
+	border-bottom: solid 1px #191919;
+	padding-bottom: 3px;
+	line-height: 20px;
+}
+
+p#search_name{
+	margin: 25px 0 0 0;
+	font-size: 13px;
+	color: #191919;
+}
+
+table#search_form_table{
+	margin: 5px 0 0 0;
+}
+
+td.search_form_left{
+	padding: 10px 0 0 0;
+	font-size: 13px;
+}
+
+td.search_form_right{
+	padding: 10px 0 0 0;
+	font-size: 13px;
+}
+
+	td.search_form_right input , td.search_form_right select{
+		margin: 0 0 0 10px;
+		border: solid 1px #191919;
+		height: 20px;
+	}
+
+a#search_form_ok{
+	display: block;
+	margin: 20px 0 0 0;
+	border: solid 1px #191919;
+	padding: 7px 10px;
+	width: 80px;
+	font-size: 13px;
+	text-align: center;
+	color: #fcfcfc;
+	background-color: #191919;
+}
+
+	a#search_form_ok:hover {
+		color: #909090;
+	}
+
+h3#search_result_title{
+	margin: 70px 0 0 0;
+	border-bottom: solid 1px #191919;
+	padding-bottom: 3px;
+	line-height: 20px;
+}
+
+p#total_number{
+	margin: 15px 0 0 0;
+	float: left;
+}
+
+p#sort_price{
+	margin: 15px 0 0 0;
+	float: right;
+}
+
+table#search_result_table{
+	clear: both;
+	margin: 70px 0 100px 0;
+	margin-top: 40px\9;
+	width: 600px;
+}
+
+	table#search_result_table tr td{
+		font-size: 13px;
+	}
+</style>
+
+<div id="M_wrapper">
+	<h3 id="search_form_title">商品検索</h3>
+	<p id="search_name">[SEARCHNAME]</p>
+
+	<table id="search_form_table">
+		<tr>
+			<td class="search_form_left">カテゴリー</td>
+			<td class="search_form_right">[CATEGORY][SUB_CATEGORY]</td>
+		</tr>
+		<tr>
+			<td class="search_form_left">商品名/キーワード</td>
+			<td class="search_form_right">[BRANDNAME]</td>
+		</tr>
+		<tr>
+			<td class="search_form_left">価格帯</td>
+			<td class="search_form_right">[MINPRICE] ~ [MAXPRICE] 円</td>
+		</tr>
+	</table>
+	<a id="search_form_ok" href=[OK]>詳細検索</a>
+
+	<h3 id="search_result_title">検索結果</h3>
+	<p id="total_number">総[TOTAL]件</p>
+	<p id="sort_price"><a href=[SORTPRICE]>→ 価格順に並び変える</a></p>
+
+	<table id="search_result_table">
+	[SEARCH_RESULT]
+	<tr>
+		<td>[IMAGE_M]</td>
+		<td><a href=[ITEMDETAIL_URL]>[ITEM_NAME]</a></td>
+		<td>[ITEM_PRICE]</td>
+	</tr>
+	[/SEARCH_RESULT]
+	</table>
+</div>

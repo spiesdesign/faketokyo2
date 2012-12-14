@@ -1,0 +1,52 @@
+<!-- パスワード紛失 -->
+<style type="text/css">
+div#M_wrapper{
+	text-align: left;
+}
+
+dl#lostpass_form{
+	margin: 20px 0 0 0;
+}
+
+	dl#lostpass_form dt{
+		margin: 20px 0 0 0;
+		font-size: 13px;
+	}
+
+	dl#lostpass_form dd{
+		margin: 5px 0 0 0;
+		font-size: 13px;
+	}
+
+	dl#lostpass_form dd input{
+		border: solid 1px #191919;
+		height: 20px;
+	}
+
+a#lostpass_form_ok{
+	clear: both;
+	display: block;
+	margin: 20px 0 0 0;
+	padding: 8px 10px;
+	width: 100px;
+	font-size: 13px;
+	text-align: center;
+	color: #fcfcfc;
+	background-color: #191919;
+}
+
+	a#lostpass_form_ok:hover {
+		color: #909090;
+	}
+</style>
+
+<div id="M_wrapper">
+	<p>パスワードを紛失された方は、下記フォームに会員IDと登録E-Mailアドレスをご入力いただき、<br>送信ボタンを押してください。 会員登録時のメールアドレスへパスワード再設定のURLを送信いたします。</p>
+	<dl id="lostpass_form" class="clearfix">
+			<dt>ID</dt>
+			<dd>[NAME]  ※半角英数字のみ</dd>
+			<dt>メールアドレス</dt>
+			<dd>[EMAIL]  ※半角英数字のみ</dd>
+	</dl>
+	<a id="lostpass_form_ok" href=[OK]>送信</a>
+</div>
