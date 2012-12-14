@@ -411,6 +411,17 @@
   }
   .responsive-wrapper#M_header_sp .help-links-box {
     clear: both;
+    width: 100%;
+    height: 44px;
+  }
+  .responsive-wrapper#M_header_sp .help-links-box.black {
+    background-color: black;
+  }
+  .responsive-wrapper#M_header_sp .help-links-box.black li.help-link {
+    border-right: 1px solid white;
+  }
+  .responsive-wrapper#M_header_sp .help-links-box.black a {
+    color: white;
   }
   .responsive-wrapper#M_header_sp .help-links-box ul {
     padding: 0;
@@ -423,9 +434,11 @@
     padding: 0;
     margin: 0;
     float: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
     text-align: center;
+    line-height: 44px;
+  }
+  .responsive-wrapper#M_header_sp .help-links-box ul li a {
+    line-height: 44px;
   }
   .responsive-wrapper#M_header_sp .help-links-box ul li.help-link {
     width: 145px;
@@ -482,6 +495,9 @@
   .responsive-wrapper#M_header_sp .menus {
     padding-top: 10px;
   }
+  .responsive-wrapper#M_header_sp .menus.bottom {
+    padding-top: 1px;
+  }
   .responsive-wrapper#M_header_sp .menus .mobile-menu {
     list-style: none;
   }
@@ -508,6 +524,46 @@
   }
   .responsive-wrapper#M_header_sp .menus .mobile-menu.lower-menu li {
     border-top: solid 1px white;
+  }
+  .responsive-wrapper#M_header_sp .notifications {
+    clear: both;
+    border-top: solid 1px white;
+  }
+  .responsive-wrapper#M_header_sp .notifications ul {
+    list-style: none;
+  }
+  .responsive-wrapper#M_header_sp .notifications ul li {
+    background-color: black;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: solid 1px white;
+  }
+  .responsive-wrapper#M_header_sp .notifications ul li a {
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 44px;
+    color: white;
+  }
+  .responsive-wrapper#M_header_sp .mobile-footer {
+    background-color: black;
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+  .responsive-wrapper#M_header_sp .mobile-footer .logo-box {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .responsive-wrapper#M_header_sp .mobile-footer .logo-box img {
+    width: 150px;
+    height: auto;
+  }
+  .responsive-wrapper#M_header_sp .mobile-footer p {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 12px;
   }
 }
 @media (max-width: 720px) and screen and (-webkit-min-device-pixel-ratio: 0) {
