@@ -6,17 +6,146 @@
 @import url("../stylesheets/common_org.css");
 
 // responsive css
-.responsive-wrapper {
-    // headers
-    #M_header_sp {
-        .logo {
-            padding:0;
-            margin:0;
-            img {
-                width: 250px;
-                height: 40px;
+@media (max-width: 720px) {
+    #M_container {
+        width: auto !important;
+    }
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .responsive-wrapper {
+        &#M_header_sp {
+            .logo-box {
+                .logo {
+                    padding:0;
+                    margin:0;
+                    padding-top: 20px;
+                    float: left;
+                    img {
+                        width: 150px;
+                        height: auto;
+                    }
+                }
+                .login-link {
+                    display: block;
+                    float: right;
+                    color: white;
+                    font-size: 14px;
+                    background-color: black;
+                    margin-top: 20px;
+                    line-height: 25px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+            .help-links-box {
+                clear: both;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    width: 300px;
+                    margin: 0 auto;
+                    li {
+                        padding: 0;
+                        margin: 0;
+                        float: left;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        text-align: center;
+                        &.help-link {
+                            width: 145px;
+                            padding-right: 4px;
+                            border-right: 1px solid black;
+                            img {
+                                width: 12px;
+                                height: 20px;
+                            }
+                        }
+                        &.cart-link {
+                            width: 145px;
+                            padding-left: 5px;
+                            img {
+                                width: 23px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .search-box {
+                width: 240px + 5px + 40px + 10px;
+                margin: 0 auto;
+                #search_box_mobile {
+                    border: solid 1px #191919;
+	            width: 242px;
+	            height: 22px;
+	            font-size: 17px;
+                    @media screen and (-webkit-min-device-pixel-ratio:0) {
+                        position: relative;
+		        top: 1px;
+                    }
+                }
+                #submit_button_mobile {
+                    margin-left: 5px;
+                    border: solid 1px #191919;
+	            padding-top: 1px\9; //hack for ie
+	            width: 40px;
+	            height: 22px;
+	            font-size: 12px;
+	            color: #ffffff;
+	            background-color: #191919;
+	            position: relative\9;// hack for ie
+	            top: 0px\9; // hack for ie
+                }
+                *+html input#submit_button_mobile{
+		    position: relative;
+		    bottom: 0;
+	        }// hack for ie7
+
+	        input#submit_button_mobile, x:-moz-any-link {
+		    position: relative;
+		    bottom: 1px;
+	        }// hack for firefox
+
+	        input#submit_button_mobil:hover {
+		    color: #909090;
+		    cursor: pointer;
+	        }
+            }
+            .menus {
+                padding-top: 10px;
+                .mobile-menu {
+                    list-style: none;
+                    li {
+                        width: 100% / 3.0;
+                        background-color: black;
+                        float: left;
+                        line-height: 44px;
+                        height: 44px;
+                        text-align: center;
+                        border-left: 1px solid white;
+                        margin-left: -1px;
+                        &.left {
+                            border-left: none;
+                            margin-left: 0;
+                        }
+                        a {
+                            dispay: inline-block;
+                            width: 100%;
+                            line-height: 44px;
+                            color: white;
+                            font-weight: bold;
+                        }
+                    }
+                    &.lower-menu {
+                        li {
+                            border-top: solid 1px white;
+                        }
+                    }
+                }
             }
         }
     }
-    
 }
