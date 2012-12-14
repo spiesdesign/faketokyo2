@@ -6,7 +6,7 @@
 @import url("../stylesheets/common_org.css");
 
 // responsive css
-@media (max-width: 720px) {
+@media (max-width: 767px) {
     #M_container {
         width: auto !important;
     }
@@ -162,22 +162,62 @@
                     }
                 }
             }
-            .notifications {
+            .vertical-list {
                 clear: both;
-                border-top: solid 1px white;
                 ul {
                     list-style: none;
                     li {
-                        background-color: black;
+                        padding-left: 20px;
                         height: 44px;
                         line-height: 44px;
-                        border-bottom: solid 1px white;
+                        border-bottom: solid 1px black;
                         a {
                             display: inline-block;
                             width: 100%;
                             font-weight: bold;
                             text-decoration: none;
                             line-height: 44px;
+                        }
+                    }
+                }
+            }
+            .fake-slideshow {
+                ul {
+                    list-style: none;
+                    li {
+                        a {
+                            img {
+                                width: 100%;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+                .pager {
+                    text-align: center;
+                    a {
+                        font-size: 24px;
+                        color: rgb(150, 150, 150);
+                    }
+                    .previous-link, .next-link {
+                        color: black;
+                    }
+                    .active {
+                        color: black;
+                    }
+                    
+                }
+            }
+            #sale-slideshow {
+                
+            }
+            .notifications {
+                border-top: solid 1px white;
+                ul {
+                    li {
+                        background-color: black;
+                        border-color: white;
+                        a {
                             color: white;
                         }
                     }

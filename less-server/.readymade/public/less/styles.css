@@ -380,7 +380,7 @@
     overflow: visible !important;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   #M_container {
     width: auto !important;
   }
@@ -525,25 +525,54 @@
   .responsive-wrapper#M_header_sp .menus .mobile-menu.lower-menu li {
     border-top: solid 1px white;
   }
-  .responsive-wrapper#M_header_sp .notifications {
+  .responsive-wrapper#M_header_sp .vertical-list {
     clear: both;
-    border-top: solid 1px white;
   }
-  .responsive-wrapper#M_header_sp .notifications ul {
+  .responsive-wrapper#M_header_sp .vertical-list ul {
     list-style: none;
   }
-  .responsive-wrapper#M_header_sp .notifications ul li {
-    background-color: black;
+  .responsive-wrapper#M_header_sp .vertical-list ul li {
+    padding-left: 20px;
     height: 44px;
     line-height: 44px;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px black;
   }
-  .responsive-wrapper#M_header_sp .notifications ul li a {
+  .responsive-wrapper#M_header_sp .vertical-list ul li a {
     display: inline-block;
     width: 100%;
     font-weight: bold;
     text-decoration: none;
     line-height: 44px;
+  }
+  .responsive-wrapper#M_header_sp .fake-slideshow ul {
+    list-style: none;
+  }
+  .responsive-wrapper#M_header_sp .fake-slideshow ul li a img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .responsive-wrapper#M_header_sp .fake-slideshow .pager {
+    text-align: center;
+  }
+  .responsive-wrapper#M_header_sp .fake-slideshow .pager a {
+    font-size: 24px;
+    color: #969696;
+  }
+  .responsive-wrapper#M_header_sp .fake-slideshow .pager .previous-link,
+  .responsive-wrapper#M_header_sp .fake-slideshow .pager .next-link {
+    color: black;
+  }
+  .responsive-wrapper#M_header_sp .fake-slideshow .pager .active {
+    color: black;
+  }
+  .responsive-wrapper#M_header_sp .notifications {
+    border-top: solid 1px white;
+  }
+  .responsive-wrapper#M_header_sp .notifications ul li {
+    background-color: black;
+    border-color: white;
+  }
+  .responsive-wrapper#M_header_sp .notifications ul li a {
     color: white;
   }
   .responsive-wrapper#M_header_sp .mobile-footer {
@@ -566,7 +595,7 @@
     font-size: 12px;
   }
 }
-@media (max-width: 720px) and screen and (-webkit-min-device-pixel-ratio: 0) {
+@media (max-width: 767px) and screen and (-webkit-min-device-pixel-ratio: 0) {
   .responsive-wrapper#M_header_sp .search-box #search_box_mobile {
     position: relative;
     top: 1px;
