@@ -1,61 +1,6 @@
 
 <!-- saved from url=(0035)http://garaemon.shop14.makeshop.jp/ -->
-<html><script>(function installFakeGeolocationCode() {
-    var timerId = null;
-    if (!navigator.geolocation) {
-    return;
-    }
-    navigator.geolocation.getCurrentPosition_ = navigator.geolocation.getCurrentPosition;
-    navigator.geolocation.watchPosition_ = navigator.geolocation.watchPosition;
-    navigator.geolocation.clearWatch_ = navigator.geolocation.clearWatch;
-
-    navigator.geolocation.clearWatch = function (id) {
-    window.clearInterval(id);
-    };
-
-    function sendBackResponse (successCb, errorCb, options, jsonedResponse) {
-    var response = JSON.parse(jsonedResponse);
-    if (response.isEnabled) {
-    successCb({ 'coords': { 'latitude': response.lat, 'longitude': response.lng,
-    'accuracy': response.accuracy }, 'timestamp': new Date().getTime() });
-    } else {
-    navigator.geolocation.getCurrentPosition_(successCb, errorCb, options);
-    }
-    }
-
-    function createGetFakePosition(successCb, errorCb, options) {
-    return function () {
-    var positionElement = document.getElementById('fake_position_meta');
-    if (!positionElement) {
-    var interval = setInterval(function() {
-    positionElement = document.getElementById('fake_position_meta');
-    if (positionElement) {
-    clearInterval(interval);
-    sendBackResponse(successCb, errorCb, options, positionElement.getAttribute('content'));
-    }
-    }, 200 /* ms */);
-    } else {
-    // we already have the div, no need for intervals etc.
-    sendBackResponse(successCb, errorCb, options, positionElement.getAttribute('content'));
-    }
-    };
-    };
-
-    navigator.geolocation.getCurrentPosition = function (cb1, cb2, options) {
-    var getFakePosition = createGetFakePosition(cb1, cb2, options);
-    getFakePosition();
-    };
-
-    navigator.geolocation.watchPosition = function (cb1, cb2, options) {
-    var getFakePosition = createGetFakePosition(cb1, cb2, options);
-    getFakePosition();
-    if (timerId) {
-    window.clearInterval(timerId);
-    }
-    timerId = window.setInterval(getFakePosition, 5 * 1000);
-    return timerId;
-    };
-    })();</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>kicks on the road | </title>
     <meta name="description" content="">
     <meta name="keywords" content="kicks on the road,">
@@ -260,6 +205,8 @@
     <div id="M_container">
 
       <!--ヘッダ ここから-->
+      
+      
       <div id="M_header" class="M_clearfix hidden-phone">
 
 	<!--▼ロゴ▼-->
@@ -310,7 +257,14 @@
       </div>
       <!--▲ここまで ヘッダ▲-->
       <!--スマホヘッダ ここから-->
-      
+      <div id="M_header_sp" class="responsive-wrapper visible-phone">
+        <h2 class="logo">
+          <a href="http://www.faketokyo.com/index.html">
+            <img src="./faketokyo2_files/logo_white.png"
+                 alt="faketokyo"> <!-- for SEO -->
+          </a>
+        </h2>
+      </div>
       <!--▲ここまで スマホヘッダ▲-->
       
       
@@ -389,7 +343,7 @@
 
               <!-- jquery 読み込み -->
               <script type="text/javascript" src="./faketokyo2_files/jquery-1.4.min.js"></script>
-
+              <script src="http://localhost:3000/javascripts/pre.js"></script>
               <script type="text/javascript">
                 $(function() {
                 $('dt.trigger').hover(
@@ -978,6 +932,7 @@
 		  </div>
 	        </div>
               </div>
+              <script src="http://localhost:3000/javascripts/post.js"></script>
           </td></tr>
       </tbody></table>
 

@@ -380,3 +380,11 @@
     overflow: visible !important;
   }
 }
+.responsive-wrapper #M_header_sp .logo {
+  padding: 0;
+  margin: 0;
+}
+.responsive-wrapper #M_header_sp .logo img {
+  width: 250px;
+  height: 40px;
+}
