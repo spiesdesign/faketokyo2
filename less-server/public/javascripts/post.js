@@ -28,5 +28,49 @@ $(function() {
             }
         });
     });
+    // looks
+    $("#staff_styling_box").each(function() {
+        var $html = $("#new-mobile-styling-box")
+        var title = $(this).find("h3").text();
+        $html.append("<h3>" + title + "</h3>");
+        $(this).find("#styling_img_box a.hoverimage").each(function() {
+            var link = $(this).attr("href");
+            var $img = $(this).find("img");
+            $html.append('<a href="' + link + '">'
+                         + '<img src="'
+                         + $img.attr("src")
+                         + '" />'
+                         + '</a>');
+        });
+        //$(".features-box").append($html);
+    });
+    $(".new_arrival_box:not(saleitem_box)").each(function() {
+        var $html = $("#new-mobile-arrival-box");
+        var title = $(this).find("h3").text();
+        $(this).find("tr a").each(function() {
+            var link = $(this).attr("href");
+            var $img = $(this).find("img");
+            $html.append('<a href="' + link + '">'
+                         + '<img src="'
+                         + $img.attr("src")
+                         + '" />'
+                         + '</a>');
+        });
+    });
+    $(".new_arrival_box.saleitem_box").each(function() {
+        var $html = $("#new-mobile-sale-box");
+        var title = $(this).find("h3").text();
+        $(this).find("tr a").each(function() {
+            var link = $(this).attr("href");
+            var $img = $(this).find("img");
+            $html.append('<a href="' + link + '">'
+                         + '<img src="'
+                         + $img.attr("src")
+                         + '" />'
+                         + '</a>');
+        });
+    });
+    
+    
 });
 
