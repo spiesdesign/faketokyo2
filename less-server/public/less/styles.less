@@ -183,27 +183,75 @@
                     }
                 }
             }
-            .two-column-list {
+            .topic-title {
                 padding: 0;
                 margin: 0;
-                list-style: none;
                 padding-left: 20px;
-                li {
-                    width: 50%;
-                    &:nth-child(odd) {
-                        float: left;
+                background-color: black;
+                width: 100%;
+                color: white;
+                font-size: 16px;
+                line-height: 30px;
+            }
+            .two-column-list-box {
+                @border-color: rgba(0.0, 0.0, 0.0, 0.3);
+                
+                .list-item {
+                    background-color: white;
+                    height: 44px;
+                    line-height: 44px;
+                    border-bottom: solid 1px @border-color;
+                    h3 {
+                        color: black;
+                        font-size: 16px;
+                        margin: 0;
+                        padding: 0;
                     }
-                    &:nth-child(even) {
-                        float: right;
+                    .description {
+                        font-size: 12px;
+                        color: red;
+                        
                     }
-                    
                 }
-                &:after {
-                    content: "";
-                    clear: both;
-                    height: 0;
-                    display: block;
-                    visibility: hidden;
+                .two-column-list {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    li {
+                        padding: 0;
+                        margin: 0;
+                        width: 50%;
+                        font-size: 16px;
+                        height: 44px;
+                        line-height: 44px;
+                        
+                        &:nth-child(odd) {
+                            float: left;
+                            border-right: solid 1px @border-color;
+                            margin-left: -1;
+                        }
+                        &:nth-child(even) {
+                            float: right;
+                        }
+                        
+                        border-top: solid 1px @border-color;
+                        &:nth-child(1), &:nth-child(2) {
+                            border-top: none;
+                        }
+                        
+                        a {
+                            line-height: 44px;
+                            padding-left: 20px;
+                        }
+                        
+                    }
+                    &:after {
+                        content: "";
+                        clear: both;
+                        height: 0;
+                        display: block;
+                        visibility: hidden;
+                    }
                 }
             }
             
