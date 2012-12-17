@@ -5,6 +5,16 @@
 
 @import url("../stylesheets/common_org.css");
 
+.clear-floating() {
+    &:after {
+        content: "";
+        clear: both;
+        height: 0;
+        display: block;
+        visibility: hidden;
+    }
+}
+
 // responsive css
 @media (max-width: 767px) {
     #M_container {
@@ -258,17 +268,11 @@
                         
                         a {
                             line-height: 44px;
-                            padding-left: 20px;
+                            padding-left: 10px;
                         }
                         
                     }
-                    &:after {
-                        content: "";
-                        clear: both;
-                        height: 0;
-                        display: block;
-                        visibility: hidden;
-                    }
+                    .clear-floating();
                 }
             }
             .bottom-belt-link-box {
@@ -284,14 +288,6 @@
             .features-box {
                 .feature-element {
                     .feature-box {
-                        // h3 {
-                        //     width: 100%;
-                        //     padding-left: 10px;
-                        //     font-size: 16px;
-                        //     color: white;
-                        //     font-weight: normal;
-                        //     background-color: black;
-                        // }
                         img {
                             width: 100% / 3.0;
                         }
@@ -366,20 +362,45 @@
             .mobile-footer {
                 background-color: black;
                 padding-left: 20px;
-                
                 .logo-box {
-                    padding-top: 10px;
-                    padding-bottom: 20px;
-                    img {
-                        width: 150px;
-                        height: auto;
+                    padding: 0;
+                    margin: 0;
+                    padding-right: 20px;
+                    height: 60px;
+                    .logo {
+                        padding: 0;
+                        margin: 0;
+                        padding-top: 16px;
+                        float: left;
+                        img {
+                            padding: 0;
+                            margin: 0;
+                            line-height: 60px;
+                            width: 195px;
+                            height: auto; //height 28px
+                        }
+                        .clear-floating();
+                    }
+                    .right-float {
+                        float: right;
+                        height: 60px;
+                        padding-top: 17px;
+                        img {
+                            height: 60px;
+                            line-height: 60px;
+                            width: 148px / 2;
+                            height: 52px / 2;
+                        }
+                        .clear-floating();
                     }
                 }
                 p {
+                    width: 100%;
                     padding: 0;
                     margin: 0;
                     color: white;
                     font-size: 12px;
+                    .clear-floating();
                 }
                 padding-bottom: 40px;
             }
