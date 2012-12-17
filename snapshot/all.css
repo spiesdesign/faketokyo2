@@ -389,8 +389,8 @@
     padding-right: 0;
   }
   .responsive-wrapper#M_header_sp .logo-box {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 60px;
   }
   .responsive-wrapper#M_header_sp .logo-box .logo {
@@ -709,7 +709,7 @@
   }
   .responsive-wrapper#M_header_sp .mobile-footer {
     background-color: black;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-bottom: 40px;
   }
   .responsive-wrapper#M_header_sp .mobile-footer .logo-box {
