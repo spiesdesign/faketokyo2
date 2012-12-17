@@ -30,7 +30,7 @@ $(function() {
     });
     // looks
     $("#staff_styling_box").each(function() {
-        var $html = $("#new-mobile-styling-box")
+        var $html = $("#new-mobile-styling-box");
         var title = $(this).find("h3").text();
         $html.append("<h3>" + title + "</h3>");
         $(this).find("#styling_img_box a.hoverimage").each(function() {
@@ -42,8 +42,8 @@ $(function() {
                          + '" />'
                          + '</a>');
         });
-        //$(".features-box").append($html);
     });
+    // new arrival
     $(".new_arrival_box:not(saleitem_box)").each(function() {
         var $html = $("#new-mobile-arrival-box");
         var title = $(this).find("h3").text();
@@ -57,6 +57,7 @@ $(function() {
                          + '</a>');
         });
     });
+    // sale
     $(".new_arrival_box.saleitem_box").each(function() {
         var $html = $("#new-mobile-sale-box");
         var title = $(this).find("h3").text();
@@ -79,5 +80,19 @@ $(function() {
             .append('<li><a href="'
                     + link + '">'
                     + name + '</a></li>');
+    });
+
+    $(".update_images a.hoverimage").each(function() {
+        var $a = $(this);
+        var link = $a.attr("href");
+        var $img = $a.find("img");
+        var img_src = $img.attr("src");
+        $(".topics ul").append('<li><a href="' +
+                               link + '">'
+                               + '<img src="'
+                               + img_src
+                               +'" />'
+                               + '</a>'
+                               + '</li>');
     });
 });
