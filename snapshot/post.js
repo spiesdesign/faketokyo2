@@ -79,9 +79,9 @@ $(function() {
         var link = $a.attr("href");
         var name = $a.text();
         $("#mobile-category ul")
-            .append('<li><a href="'
+            .append('<li><div class="black-link-disclosure"><a href="'
                     + link + '">'
-                    + name + '</a></li>');
+                    + name + '</a></div></li>');
     });
 
     $(".update_images a.hoverimage").each(function() {
