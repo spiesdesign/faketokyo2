@@ -611,14 +611,14 @@
     display: block;
     visibility: hidden;
   }
-  .responsive-wrapper#M_header_sp .features-box .feature-element .bottom-link-box {
+  .responsive-wrapper#M_header_sp .bottom-belt-link-box {
     background-color: rgba(0, 0, 0, 0.01);
     height: 44px;
     line-height: 44px;
     text-align: right;
     padding-right: 40px;
   }
-  .responsive-wrapper#M_header_sp .features-box .feature-element .bottom-link-box a {
+  .responsive-wrapper#M_header_sp .bottom-belt-link-box a {
     line-height: 44px;
   }
   .responsive-wrapper#M_header_sp .features-box .feature-element .feature-box h3 {
@@ -662,6 +662,24 @@
   }
   .responsive-wrapper#M_header_sp .notifications ul li a {
     color: white;
+  }
+  .responsive-wrapper#M_header_sp .topics ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .responsive-wrapper#M_header_sp .topics ul li {
+    padding: 0;
+    margin: 0;
+  }
+  .responsive-wrapper#M_header_sp .topics ul li a {
+    padding: 0;
+    margin: 0;
+  }
+  .responsive-wrapper#M_header_sp .topics ul li a img {
+    vertical-align: bottom;
+    width: 100%;
+    max-width: 100%;
   }
   .responsive-wrapper#M_header_sp .mobile-footer {
     background-color: black;
