@@ -70,7 +70,14 @@ $(function() {
                          + '</a>');
         });
     });
-    
-    
+    // category
+    $("#category_list_box dl.accordion dt a").each(function() {
+        var $a = $(this);
+        var link = $a.attr("href");
+        var name = $a.text();
+        $("#mobile-category ul")
+            .append('<li><a href="'
+                    + link + '">'
+                    + name + '</a></li>');
+    });
 });
-

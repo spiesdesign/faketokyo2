@@ -548,6 +548,28 @@
     text-decoration: none;
     line-height: 44px;
   }
+  .responsive-wrapper#M_header_sp .two-column-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-left: 20px;
+  }
+  .responsive-wrapper#M_header_sp .two-column-list li {
+    width: 50%;
+  }
+  .responsive-wrapper#M_header_sp .two-column-list li:nth-child(odd) {
+    float: left;
+  }
+  .responsive-wrapper#M_header_sp .two-column-list li:nth-child(even) {
+    float: right;
+  }
+  .responsive-wrapper#M_header_sp .two-column-list:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+  }
   .responsive-wrapper#M_header_sp .features-box .feature-box h3 {
     width: 100%;
     padding-left: 20px;

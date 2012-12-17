@@ -183,6 +183,30 @@
                     }
                 }
             }
+            .two-column-list {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                padding-left: 20px;
+                li {
+                    width: 50%;
+                    &:nth-child(odd) {
+                        float: left;
+                    }
+                    &:nth-child(even) {
+                        float: right;
+                    }
+                    
+                }
+                &:after {
+                    content: "";
+                    clear: both;
+                    height: 0;
+                    display: block;
+                    visibility: hidden;
+                }
+            }
+            
             .features-box {
                 .feature-box {
                     h3 {
