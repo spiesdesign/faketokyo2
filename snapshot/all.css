@@ -549,7 +549,7 @@
     list-style: none;
   }
   .responsive-wrapper#M_header_sp .vertical-list ul li {
-    padding-left: 20px;
+    padding-left: 10px;
     height: 44px;
     line-height: 44px;
     border-bottom: solid 1px black;
