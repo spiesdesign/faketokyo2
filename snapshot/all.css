@@ -485,6 +485,8 @@
   .responsive-wrapper#M_header_sp .search-box #submit_button_mobile {
     margin: 0;
     padding: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
     margin-left: 3%;
     border: solid 1px #191919;
     padding-top: 1px\9;
@@ -769,11 +771,5 @@
     height: 0;
     display: block;
     visibility: hidden;
-  }
-}
-@media (max-width: 767px) and screen and (-webkit-min-device-pixel-ratio: 0) {
-  .responsive-wrapper#M_header_sp .search-box #search_box_mobile {
-    position: relative;
-    top: 1px;
   }
 }
