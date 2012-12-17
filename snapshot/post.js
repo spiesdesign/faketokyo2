@@ -78,10 +78,12 @@ $(function() {
         var $a = $(this);
         var link = $a.attr("href");
         var name = $a.text();
-        $("#mobile-category ul")
-            .append('<li><div class="black-link-disclosure"><a href="'
-                    + link + '">'
-                    + name + '</a></div></li>');
+        if (name != "CANDY" && name != "Sister") {
+            $("#mobile-category ul")
+                .append('<li><div class="black-link-disclosure"><a href="'
+                        + link + '">'
+                        + name + '</a></div></li>');
+        }
     });
 
     $(".update_images a.hoverimage").each(function() {
