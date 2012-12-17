@@ -391,15 +391,17 @@
   .responsive-wrapper#M_header_sp .logo-box {
     padding-left: 20px;
     padding-right: 20px;
+    height: 60px;
   }
   .responsive-wrapper#M_header_sp .logo-box .logo {
     padding: 0;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 16px;
     float: left;
   }
   .responsive-wrapper#M_header_sp .logo-box .logo img {
-    width: 150px;
+    line-height: 60px;
+    width: 195px;
     height: auto;
   }
   .responsive-wrapper#M_header_sp .logo-box .login-link {
@@ -408,8 +410,8 @@
     color: white;
     font-size: 14px;
     background-color: black;
-    margin-top: 20px;
-    line-height: 25px;
+    margin-top: 16px;
+    line-height: 28px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -431,51 +433,62 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    width: 300px;
-    margin: 0 auto;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
   }
   .responsive-wrapper#M_header_sp .help-links-box ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     padding: 0;
     margin: 0;
     float: left;
     text-align: center;
+    width: 50%;
     line-height: 44px;
   }
   .responsive-wrapper#M_header_sp .help-links-box ul li a {
     line-height: 44px;
+    height: 44px;
+  }
+  .responsive-wrapper#M_header_sp .help-links-box ul li img {
+    vertical-align: middle;
+    line-height: 44px;
+    margin-right: 8px;
   }
   .responsive-wrapper#M_header_sp .help-links-box ul li.help-link {
-    width: 145px;
-    padding-right: 4px;
-    border-right: 1px solid black;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
   }
   .responsive-wrapper#M_header_sp .help-links-box ul li.help-link img {
     width: 12px;
     height: 20px;
   }
   .responsive-wrapper#M_header_sp .help-links-box ul li.cart-link {
-    width: 145px;
-    padding-left: 5px;
+    margin-left: -1px;
   }
   .responsive-wrapper#M_header_sp .help-links-box ul li.cart-link img {
     width: 23px;
     height: 20px;
   }
   .responsive-wrapper#M_header_sp .search-box {
-    width: 295px;
+    width: 100%;
     margin: 0 auto;
+    margin-top: 10px;
   }
   .responsive-wrapper#M_header_sp .search-box #search_box_mobile {
+    margin: 0;
+    padding: 0;
+    margin-left: 3%;
+    width: 80%;
     border: solid 1px #191919;
-    width: 242px;
     height: 22px;
     font-size: 17px;
   }
   .responsive-wrapper#M_header_sp .search-box #submit_button_mobile {
-    margin-left: 5px;
+    margin: 0;
+    padding: 0;
+    margin-left: 3%;
     border: solid 1px #191919;
     padding-top: 1px\9;
-    width: 40px;
+    width: 10%;
     height: 22px;
     font-size: 12px;
     color: #ffffff;
@@ -551,12 +564,13 @@
   .responsive-wrapper#M_header_sp .topic-title {
     padding: 0;
     margin: 0;
-    padding-left: 20px;
+    padding-left: 10px;
     background-color: black;
     width: 100%;
     color: white;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
   }
   .responsive-wrapper#M_header_sp .two-column-list-box .list-item {
     background-color: white;
@@ -612,7 +626,7 @@
     visibility: hidden;
   }
   .responsive-wrapper#M_header_sp .bottom-belt-link-box {
-    background-color: rgba(0, 0, 0, 0.01);
+    background-color: rgba(0, 0, 0, 0.04);
     height: 44px;
     line-height: 44px;
     text-align: right;
@@ -620,14 +634,6 @@
   }
   .responsive-wrapper#M_header_sp .bottom-belt-link-box a {
     line-height: 44px;
-  }
-  .responsive-wrapper#M_header_sp .features-box .feature-element .feature-box h3 {
-    width: 100%;
-    padding-left: 20px;
-    font-size: 16px;
-    color: white;
-    font-weight: normal;
-    background-color: black;
   }
   .responsive-wrapper#M_header_sp .features-box .feature-element .feature-box img {
     width: 33.333333333333336%;
@@ -640,9 +646,11 @@
     max-width: 100%;
   }
   .responsive-wrapper#M_header_sp .fake-slideshow .pager {
+    height: 40px;
     text-align: center;
   }
   .responsive-wrapper#M_header_sp .fake-slideshow .pager a {
+    line-height: 40px;
     font-size: 24px;
     color: #969696;
   }
