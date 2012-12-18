@@ -71,8 +71,15 @@ $(function() {
             return false;
         });
 
-        // setup flickSimple callbacks
-        
+        var insfs = fs.flickSimple();
+        var ssflg = true;
+        setInterval( function() {
+	    if ( ! ssflg ) { return; }
+	    if ( insfs.startX != null ) { return; }
+	    ( insfs.pageLength < insfs.page +1 )
+		? insfs.goTo( 1 )
+		: insfs.nextPage( 1 );
+	}, 3000 );        
         
         // $("#thumbFeatures div a").each(function() {
         //     var $a = $(this);
