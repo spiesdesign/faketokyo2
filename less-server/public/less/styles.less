@@ -338,17 +338,38 @@ margin-left: -1px;
                 }
             }
             .fake-slideshow {
-                ul {
-                    list-style: none;
-                    li {
-                        a {
-                            img {
-                                width: 100%;
-                                max-width: 100%;
+                .flickSimple {
+                    width: 100%;
+                    position: relative;
+	            overflow: auto;
+                    ul {
+	                margin: 0;
+	                padding: 0;
+                        li {
+                            float: left;
+                            display: block;
+	                    list-style-type: none;
+	                    width: 100%;
+                            max-width: 100%;
+                            a {
+                                img {
+                                    width: 100%;
+                                }
                             }
                         }
                     }
                 }
+                // ul {
+                //     list-style: none;
+                //     li {
+                //         a {
+                //             img {
+                //                 width: 100%;
+                //                 max-width: 100%;
+                //             }
+                //         }
+                //     }
+                // }
                 .pager {
                     height: 40px;
                     text-align: center;

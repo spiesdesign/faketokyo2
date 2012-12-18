@@ -677,12 +677,24 @@
     min-width: 33.333333333333336%;
     max-width: 33.333333333333336%;
   }
-  .responsive-wrapper#M_header_sp .fake-slideshow ul {
-    list-style: none;
+  .responsive-wrapper#M_header_sp .fake-slideshow .flickSimple {
+    width: 100%;
+    position: relative;
+    overflow: auto;
   }
-  .responsive-wrapper#M_header_sp .fake-slideshow ul li a img {
+  .responsive-wrapper#M_header_sp .fake-slideshow .flickSimple ul {
+    margin: 0;
+    padding: 0;
+  }
+  .responsive-wrapper#M_header_sp .fake-slideshow .flickSimple ul li {
+    float: left;
+    display: block;
+    list-style-type: none;
     width: 100%;
     max-width: 100%;
+  }
+  .responsive-wrapper#M_header_sp .fake-slideshow .flickSimple ul li a img {
+    width: 100%;
   }
   .responsive-wrapper#M_header_sp .fake-slideshow .pager {
     height: 40px;
