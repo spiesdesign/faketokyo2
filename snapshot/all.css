@@ -667,8 +667,15 @@
     padding-right: 25px;
     line-height: 44px;
   }
+  .responsive-wrapper#M_header_sp .features-box .feature-element .sale-box img {
+    width: 25%;
+    min-width: 25%;
+    max-width: 25%;
+  }
   .responsive-wrapper#M_header_sp .features-box .feature-element .feature-box img {
     width: 33.333333333333336%;
+    min-width: 33.333333333333336%;
+    max-width: 33.333333333333336%;
   }
   .responsive-wrapper#M_header_sp .fake-slideshow ul {
     list-style: none;
