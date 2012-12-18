@@ -36,41 +36,49 @@ $(function() {
         $(this).find("#styling_img_box a.hoverimage").each(function() {
             var link = $(this).attr("href");
             var $img = $(this).find("img");
-            $html.append('<a href="' + link + '">'
-                         + '<img src="'
-                         + $img.attr("src")
-                         + '" />'
-                         + '</a>');
+            if (link && $img.attr("src") ) {
+                $html.append('<a href="' + link + '">'
+                             + '<img src="'
+                             + $img.attr("src")
+                             + '" />'
+                             + '</a>');
+            }
         });
     });
     // new arrival
-    $(".new_arrival_box:not(saleitem_box)").each(function() {
+    $(".new_arrival_box:not(.saleitem_box)").each(function() {
+        console.log("hoge");
         var $html = $("#new-mobile-arrival-box");
         var title = $(this).find("h3").text();
         $html.append('<h3 class="topic-title">' + title + "</h3>");
         $(this).find("tr a").each(function() {
             var link = $(this).attr("href");
             var $img = $(this).find("img");
-            $html.append('<a href="' + link + '">'
-                         + '<img src="'
-                         + $img.attr("src")
-                         + '" />'
-                         + '</a>');
+            if (link && $img.attr("src") ) {
+                $html.append('<a href="' + link + '">'
+                             + '<img src="'
+                             + $img.attr("src")
+                             + '" />'
+                             + '</a>');
+            }
         });
     });
     // sale
     $(".new_arrival_box.saleitem_box").each(function() {
+        console.log("fuga");
         var $html = $("#new-mobile-sale-box");
         var title = $(this).find("h3").text();
         $html.append('<h3 class="topic-title">' + title + "</h3>");
         $(this).find("tr a").each(function() {
             var link = $(this).attr("href");
             var $img = $(this).find("img");
-            $html.append('<a href="' + link + '">'
-                         + '<img src="'
-                         + $img.attr("src")
-                         + '" />'
-                         + '</a>');
+            if (link && $img.attr("src") ) {
+                $html.append('<a href="' + link + '">'
+                             + '<img src="'
+                             + $img.attr("src")
+                             + '" />'
+                             + '</a>');
+            }
         });
     });
     // category
